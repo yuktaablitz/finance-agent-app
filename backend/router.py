@@ -64,17 +64,9 @@ class Router:
             "zen_coach": FinancialPersonality.ZEN,
             "tough": FinancialPersonality.TOUGH_LOVE,
             "tough_love": FinancialPersonality.TOUGH_LOVE,
-            "tough love": FinancialPersonality.TOUGH_LOVE,
             "support": FinancialPersonality.SUPPORTIVE,
-            "supportive": FinancialPersonality.SUPPORTIVE,
-            "to_the_point": FinancialPersonality.TO_THE_POINT,
-            "to the point": FinancialPersonality.TO_THE_POINT,
-            "to-the-point": FinancialPersonality.TO_THE_POINT,
-            "to the point": FinancialPersonality.TO_THE_POINT,
             "to_the_point": FinancialPersonality.TO_THE_POINT,
             "no_bs": FinancialPersonality.NO_BS,
-            "no bs": FinancialPersonality.NO_BS,
-            "no-bs": FinancialPersonality.NO_BS,
         }
 
         return mapping.get(t, FinancialPersonality.SUPPORTIVE)
