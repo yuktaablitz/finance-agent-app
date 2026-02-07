@@ -1,13 +1,23 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from router import Router
 from memory.memory_manager import MemoryManager
 from personality.tone_engine import determine_tone
 from context_builder import build_context
 
+
 app = FastAPI()
 
 router = Router()
 memory = MemoryManager()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/chat")

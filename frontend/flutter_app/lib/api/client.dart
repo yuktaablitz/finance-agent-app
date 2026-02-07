@@ -16,7 +16,7 @@ class ApiClient {
     final body = {
       "user_id": userId,
       "message": message,
-      if (personality != null) "personality": personality,
+      "personality": ?personality,
     };
 
     final res = await http.post(

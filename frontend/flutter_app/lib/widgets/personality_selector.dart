@@ -4,7 +4,11 @@ class PersonalitySelector extends StatelessWidget {
   final String selected;
   final ValueChanged<String> onChanged;
 
-  PersonalitySelector({required this.selected, required this.onChanged});
+  PersonalitySelector({
+    super.key,
+    required this.selected,
+    required this.onChanged,
+  });
 
   final List<Map<String, String>> options = [
     {"key": "zen_coach", "label": "Zen"},

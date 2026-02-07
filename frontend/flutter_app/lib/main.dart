@@ -6,7 +6,7 @@ import 'package:flutter_app/state/chat_state.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: ".env"); // local .env
+  await dotenv.load(fileName: "assets/.env"); // local .env
   runApp(MyApp());
 }
 

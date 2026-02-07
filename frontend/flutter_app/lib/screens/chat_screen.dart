@@ -6,6 +6,8 @@ import 'package:flutter_app/api/client.dart';
 import 'package:flutter_app/widgets/personality_selector.dart';
 
 class ChatScreen extends StatefulWidget {
+  const ChatScreen({super.key});
+
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
