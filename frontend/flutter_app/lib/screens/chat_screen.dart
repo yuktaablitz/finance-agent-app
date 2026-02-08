@@ -4,6 +4,7 @@ import 'package:uuid/uuid.dart';
 import 'package:flutter_app/state/chat_state.dart';
 import 'package:flutter_app/api/client.dart';
 import 'package:flutter_app/widgets/personality_selector.dart';
+import 'package:flutter_app/screens/receipt_upload_screen.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -142,6 +143,18 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ReceiptUploadScreen(userId: userId),
+            ),
+          );
+        },
+        child: Icon(Icons.receipt_long),
+        tooltip: 'Upload Receipt',
       ),
     );
   }

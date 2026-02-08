@@ -16,7 +16,7 @@ class ApiClient {
     final body = {
       "user_id": userId,
       "message": message,
-      "personality": ?personality,
+      if (personality != null) "personality": personality,
     };
 
     final res = await http.post(
@@ -31,5 +31,23 @@ class ApiClient {
 
     final Map<String, dynamic> parsed = jsonDecode(res.body);
     return parsed;
+  }
+
+  Future<Map<String, dynamic>> uploadReceipt({
+    required String userId,
+    required String imagePath,
+  }) async {
+    final url = Uri.parse('$baseUrl/upload-receipt?user_id=$userId');
+    final request = http.MultipartRequest('POST', url);
+    request.files.add(await http.MultipartFile.fromPath('image', imagePath));
+
+    final streamedRes = await request.send();
+    final res = await http.Response.fromStream(streamedRes);
+
+    if (res.statusCode != 200) {
+      throw Exception('Upload failed: ${res.statusCode} ${res.body}');
+    }
+
+    return jsonDecode(res.body);
   }
 }
