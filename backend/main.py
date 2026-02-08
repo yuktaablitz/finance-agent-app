@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from router import Router
 from memory.memory_manager import MemoryManager
 from personality.tone_engine import determine_tone, ToneEngine
@@ -8,11 +9,20 @@ from uuid import uuid4
 import json
 from pathlib import Path
 
+
 app = FastAPI()
 
 router = Router()
 memory = MemoryManager()
 tone_engine = ToneEngine()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/chat")
