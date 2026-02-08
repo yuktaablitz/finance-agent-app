@@ -8,6 +8,7 @@ from datetime import datetime
 from uuid import uuid4
 import json
 from pathlib import Path
+import os
 
 
 app = FastAPI()
@@ -130,6 +131,89 @@ async def upload_receipt(user_id: str, image: UploadFile = File(...)):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Receipt processing failed: {str(e)}")
+
+
+@app.post("/plaid/create-link-token")
+def create_plaid_link_token(payload: dict):
+    """Create a Plaid Link token for user authentication."""
+    user_id = payload.get("user_id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="user_id required")
+    
+    try:
+        from plaid_client import PlaidClient
+        plaid = PlaidClient()
+        result = plaid.create_link_token(user_id)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/plaid/exchange-token")
+def exchange_plaid_token(payload: dict):
+    """Exchange public token for access token."""
+    public_token = payload.get("public_token")
+    user_id = payload.get("user_id")
+    
+    if not public_token or not user_id:
+        raise HTTPException(status_code=400, detail="public_token and user_id required")
+    
+    try:
+        from plaid_client import PlaidClient
+        plaid = PlaidClient()
+        result = plaid.exchange_public_token(public_token)
+        
+        # Store access token in user memory
+        memory_data = memory.load(user_id)
+        memory_data["plaid_access_token"] = result["access_token"]
+        memory_data["plaid_item_id"] = result["item_id"]
+        memory.save(user_id, memory_data)
+        
+        return {"status": "ok", "item_id": result["item_id"]}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/plaid/fetch-transactions")
+def fetch_plaid_transactions(payload: dict):
+    """Fetch transactions from Plaid and store in user memory."""
+    user_id = payload.get("user_id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="user_id required")
+    
+    try:
+        from plaid_client import PlaidClient
+        
+        # Get access token from memory
+        memory_data = memory.load(user_id)
+        access_token = memory_data.get("plaid_access_token")
+        
+        if not access_token:
+            raise HTTPException(status_code=400, detail="No Plaid account connected. Please connect via Plaid Link first.")
+        
+        plaid = PlaidClient()
+        transactions = plaid.get_transactions(access_token)
+        accounts = plaid.get_accounts(access_token)
+        
+        # Store in memory
+        memory_data["transactions"] = transactions
+        memory_data["accounts"] = accounts
+        memory.save(user_id, memory_data)
+        
+        # Calculate summary
+        total_income = sum(tx["amount"] for tx in transactions if tx["amount"] < 0)
+        total_expenses = sum(tx["amount"] for tx in transactions if tx["amount"] > 0)
+        
+        return {
+            "status": "ok",
+            "transactions_count": len(transactions),
+            "accounts_count": len(accounts),
+            "total_income": abs(total_income),
+            "total_expenses": total_expenses,
+            "balance": accounts[0]["balance"]["current"] if accounts else 0
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/load-transactions")

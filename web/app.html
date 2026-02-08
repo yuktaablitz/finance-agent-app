@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountantAI - Financial Intelligence Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --orange-primary: #D84315;
+            --orange-dark: #BF360C;
+            --orange-light: #FF6E40;
+            --grey-dark: #263238;
+            --grey-medium: #455A64;
+            --grey-light: #78909C;
+            --grey-bg: #ECEFF1;
+        }
+        .tab-active {
+            background-color: var(--orange-primary);
+            color: white;
+        }
+        .tab-inactive {
+            background-color: white;
+            color: var(--grey-dark);
+        }
+        .tab-inactive:hover {
+            background-color: var(--grey-bg);
+        }
+        .risk-low { color: #4CAF50; }
+        .risk-medium { color: #FF9800; }
+        .risk-high { color: #F44336; }
+        .thinking-badge {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .thinking-high {
+            background-color: var(--orange-primary);
+            color: white;
+        }
+        .thinking-low {
+            background-color: var(--grey-light);
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: var(--grey-bg);">
+    <!-- Header -->
+    <div class="bg-white shadow-sm border-b" style="border-color: var(--grey-light);">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold" style="color: var(--orange-primary);">AccountantAI</h1>
+                <div class="text-sm" style="color: var(--grey-medium);">
+                    <span class="font-medium">Balance:</span> 
+                    <span class="text-lg font-bold" style="color: var(--grey-dark);">$2,758</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="bg-white border-b" style="border-color: var(--grey-light);">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-1">
+                <button onclick="showTab('dashboard')" id="tab-dashboard" class="px-6 py-3 font-medium transition tab-active">
+                    Dashboard
+                </button>
+                <button onclick="showTab('ai-accountant')" id="tab-ai-accountant" class="px-6 py-3 font-medium transition tab-inactive">
+                    AI Accountant
+                </button>
+                <button onclick="showTab('transactions')" id="tab-transactions" class="px-6 py-3 font-medium transition tab-inactive">
+                    Transactions
+                </button>
+                <button onclick="showTab('receipts')" id="tab-receipts" class="px-6 py-3 font-medium transition tab-inactive">
+                    Receipts
+                </button>
+                <button onclick="showTab('reconciliation')" id="tab-reconciliation" class="px-6 py-3 font-medium transition tab-inactive">
+                    Reconciliation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        
+        <!-- TAB 1: Dashboard -->
+        <div id="content-dashboard" class="tab-content">
+            <!-- Financial Health Overview -->
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Financial Health</h3>
+                    <div class="text-4xl font-bold mb-2" style="color: var(--orange-primary);">72/100</div>
+                    <p class="text-sm" style="color: var(--grey-medium);">Needs Attention</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Savings Rate</h3>
+                    <div class="text-4xl font-bold mb-2" style="color: var(--grey-dark);">6.5%</div>
+                    <p class="text-sm risk-medium">Below 20% target</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Emergency Fund</h3>
+                    <div class="text-4xl font-bold mb-2 risk-high">48hrs</div>
+                    <p class="text-sm" style="color: var(--grey-medium);">Need 3-6 months</p>
+                </div>
+            </div>
+
+            <!-- Cashflow Projection -->
+            <div class="bg-white rounded-lg shadow p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">30-Day Cashflow Projection</h2>
+                <canvas id="cashflowChart" height="80"></canvas>
+            </div>
+
+            <!-- Insight Cards -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow p-6 border-l-4" style="border-color: var(--orange-primary);">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold" style="color: var(--grey-dark);">Food & Drink Overspending</h3>
+                        <span class="thinking-badge thinking-high">HIGH</span>
+                    </div>
+                    <p class="text-sm mb-3" style="color: var(--grey-medium);">
+                        You're spending $8,885/month on food - that's 21% of income. Industry benchmark is 10-15%.
+                    </p>
+                    <p class="text-sm font-medium" style="color: var(--orange-primary);">
+                        Potential savings: $3,000/month
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6 border-l-4" style="border-color: var(--grey-light);">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-bold" style="color: var(--grey-dark);">Transfer Investigation</h3>
+                        <span class="thinking-badge thinking-high">HIGH</span>
+                    </div>
+                    <p class="text-sm mb-3" style="color: var(--grey-medium);">
+                        $19,810 in transfers detected. Verify these are going to savings/investments, not expenses.
+                    </p>
+                    <p class="text-sm font-medium" style="color: var(--orange-primary);">
+                        Action required: Categorize transfers
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: AI Accountant -->
+        <div id="content-ai-accountant" class="tab-content hidden">
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <!-- Pipeline Visualization -->
+                <div class="md:col-span-2 bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold mb-4" style="color: var(--grey-dark);">Data Pipeline</h2>
+                    <div class="flex items-center justify-between gap-4 mb-6">
+                        <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--grey-light);">
+                            <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">1. Bank Data</h3>
+                            <p class="text-xs" style="color: var(--grey-medium);">Plaid Link</p>
+                            <button onclick="connectPlaid()" class="mt-2 px-4 py-1 text-sm rounded text-white" style="background-color: var(--orange-primary);">
+                                Connect
+                            </button>
+                        </div>
+                        <div class="text-2xl" style="color: var(--grey-light);">→</div>
+                        <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--grey-light);">
+                            <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">2. Processing</h3>
+                            <p class="text-xs" style="color: var(--grey-medium);">FastAPI</p>
+                            <p class="text-xs mt-2 font-medium" style="color: var(--orange-primary);">478 txns</p>
+                        </div>
+                        <div class="text-2xl" style="color: var(--grey-light);">→</div>
+                        <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--orange-primary);">
+                            <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">3. AI Analysis</h3>
+                            <p class="text-xs" style="color: var(--grey-medium);">Gemini 3 Flash</p>
+                            <span class="inline-block mt-2 thinking-badge thinking-high">HIGH/LOW</span>
+                        </div>
+                    </div>
+
+                    <!-- Chat Interface -->
+                    <div class="border-t pt-6" style="border-color: var(--grey-light);">
+                        <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Ask Your AI Accountant</h3>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2" style="color: var(--grey-dark);">Personality</label>
+                            <select id="aiPersonality" class="w-full border rounded-lg px-4 py-2" style="border-color: var(--grey-light);">
+                                <option value="zen_coach">Zen Coach</option>
+                                <option value="tough_love">Tough Love</option>
+                                <option value="supportive">Supportive</option>
+                                <option value="to_the_point">To The Point</option>
+                                <option value="no_bs">No BS</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="text" id="aiMessage" 
+                                   class="w-full border rounded-lg px-4 py-3" 
+                                   style="border-color: var(--grey-light);"
+                                   placeholder="Should I invest $500 this month?"
+                                   value="Should I invest $500 this month?">
+                        </div>
+
+                        <button onclick="askAI()" 
+                                class="w-full py-3 rounded-lg font-medium text-white transition"
+                                style="background-color: var(--orange-primary);"
+                                onmouseover="this.style.backgroundColor='var(--orange-dark)'"
+                                onmouseout="this.style.backgroundColor='var(--orange-primary)'">
+                            Ask Gemini 3
+                        </button>
+
+                        <div id="aiResponse" class="mt-6 hidden">
+                            <div class="p-4 rounded border" style="background-color: var(--grey-bg); border-color: var(--grey-light);">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div class="text-xs" style="color: var(--grey-medium);">
+                                        <span id="aiAgent" class="font-medium"></span> | 
+                                        <span id="aiTone"></span>
+                                    </div>
+                                    <span id="aiThinking" class="thinking-badge thinking-high">HIGH</span>
+                                </div>
+                                <div id="aiResponseText" class="text-sm whitespace-pre-wrap" style="color: var(--grey-dark);"></div>
+                            </div>
+                        </div>
+
+                        <div id="aiLoading" class="mt-6 hidden text-center">
+                            <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2" style="border-color: var(--orange-primary);"></div>
+                            <p class="text-sm mt-2" style="color: var(--grey-medium);">Gemini 3 is thinking...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent Info -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Multi-Agent System</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="border-l-4 pl-3 py-2" style="border-color: var(--orange-primary);">
+                            <h4 class="font-semibold text-sm" style="color: var(--grey-dark);">Spending Agent</h4>
+                            <p class="text-xs" style="color: var(--grey-medium);">Analyzes purchase decisions</p>
+                            <span class="text-xs thinking-badge thinking-high mt-1 inline-block">HIGH</span>
+                        </div>
+
+                        <div class="border-l-4 pl-3 py-2" style="border-color: var(--orange-primary);">
+                            <h4 class="font-semibold text-sm" style="color: var(--grey-dark);">Budgeting Agent</h4>
+                            <p class="text-xs" style="color: var(--grey-medium);">50/30/20 framework</p>
+                            <span class="text-xs thinking-badge thinking-high mt-1 inline-block">HIGH</span>
+                        </div>
+
+                        <div class="border-l-4 pl-3 py-2" style="border-color: var(--orange-primary);">
+                            <h4 class="font-semibold text-sm" style="color: var(--grey-dark);">Investing Agent</h4>
+                            <p class="text-xs" style="color: var(--grey-medium);">Readiness assessment</p>
+                            <span class="text-xs thinking-badge thinking-high mt-1 inline-block">HIGH</span>
+                        </div>
+
+                        <div class="border-l-4 pl-3 py-2" style="border-color: var(--grey-light);">
+                            <h4 class="font-semibold text-sm" style="color: var(--grey-dark);">Router</h4>
+                            <p class="text-xs" style="color: var(--grey-medium);">Intent classification</p>
+                            <span class="text-xs thinking-badge thinking-low mt-1 inline-block">LOW</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-3 rounded" style="background-color: var(--grey-bg);">
+                        <p class="text-xs" style="color: var(--grey-medium);">
+                            <strong>Gemini 3 Flash Preview</strong> dynamically switches between HIGH thinking for complex analysis and LOW thinking for fast routing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: Transactions -->
+        <div id="content-transactions" class="tab-content hidden">
+            <div class="bg-white rounded-lg shadow p-6 mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold" style="color: var(--grey-dark);">Financial State</h2>
+                    <span class="text-sm px-3 py-1 rounded" style="background-color: var(--orange-light); color: white;">
+                        Single Source of Truth
+                    </span>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-4 mb-6">
+                    <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
+                        <div class="text-2xl font-bold" style="color: var(--orange-primary);">478</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">Transactions</div>
+                    </div>
+                    <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
+                        <div class="text-2xl font-bold" style="color: var(--grey-dark);">$42,500</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">Income</div>
+                    </div>
+                    <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
+                        <div class="text-2xl font-bold" style="color: var(--orange-dark);">$39,742</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">Spent</div>
+                    </div>
+                    <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
+                        <div class="text-2xl font-bold" style="color: var(--grey-dark);">$2,758</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">Balance</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Plaid Transactions -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Plaid Transactions (Top 10)</h3>
+                    <div class="space-y-2" id="transactionList">
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
+                            <div>
+                                <div class="font-medium text-sm" style="color: var(--grey-dark);">Whole Foods</div>
+                                <div class="text-xs" style="color: var(--grey-medium);">Food & Drink</div>
+                            </div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$127.43</div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
+                            <div>
+                                <div class="font-medium text-sm" style="color: var(--grey-dark);">Uber</div>
+                                <div class="text-xs" style="color: var(--grey-medium);">Travel</div>
+                            </div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$45.20</div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
+                            <div>
+                                <div class="font-medium text-sm" style="color: var(--grey-dark);">Starbucks</div>
+                                <div class="text-xs" style="color: var(--grey-medium);">Food & Drink</div>
+                            </div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$8.50</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATM Withdrawals & Cash Pool -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold mb-4" style="color: var(--grey-dark);">ATM Withdrawals & Cash Pool</h3>
+                    <div class="mb-4 p-4 rounded" style="background-color: #FFF3E0;">
+                        <div class="text-sm font-medium mb-2" style="color: var(--orange-dark);">Unaccounted Cash</div>
+                        <div class="text-3xl font-bold" style="color: var(--orange-primary);">$450</div>
+                        <div class="text-xs mt-1" style="color: var(--grey-medium);">From 3 ATM withdrawals</div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
+                            <div class="text-sm" style="color: var(--grey-dark);">ATM Withdrawal</div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$200</div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
+                            <div class="text-sm" style="color: var(--grey-dark);">ATM Withdrawal</div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$150</div>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <div class="text-sm" style="color: var(--grey-dark);">ATM Withdrawal</div>
+                            <div class="text-sm font-bold" style="color: var(--orange-dark);">-$100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Balance Comparison -->
+            <div class="bg-white rounded-lg shadow p-6 mt-6">
+                <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Modeled Balance vs Bank Balance</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 rounded border-2" style="border-color: var(--orange-primary);">
+                        <div class="text-sm mb-2" style="color: var(--grey-medium);">Modeled Balance</div>
+                        <div class="text-3xl font-bold" style="color: var(--grey-dark);">$2,308</div>
+                        <div class="text-xs mt-1" style="color: var(--grey-medium);">Based on tracked transactions</div>
+                    </div>
+                    <div class="p-4 rounded border-2" style="border-color: var(--grey-light);">
+                        <div class="text-sm mb-2" style="color: var(--grey-medium);">Bank Balance</div>
+                        <div class="text-3xl font-bold" style="color: var(--grey-dark);">$2,758</div>
+                        <div class="text-xs mt-1" style="color: var(--grey-medium);">From Plaid</div>
+                    </div>
+                </div>
+                <div class="mt-4 p-4 rounded" style="background-color: #FFEBEE;">
+                    <p class="text-sm font-medium" style="color: var(--orange-dark);">
+                        Discrepancy: $450 - Likely untracked cash expenses
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: Receipts -->
+        <div id="content-receipts" class="tab-content hidden">
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Upload Receipt -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">Upload Receipt</h2>
+                    
+                    <div class="border-2 border-dashed rounded-lg p-8 text-center mb-4" style="border-color: var(--grey-light);">
+                        <input type="file" id="receiptInput" accept="image/*" class="hidden" onchange="handleReceiptUpload(event)">
+                        <button onclick="document.getElementById('receiptInput').click()" 
+                                class="px-6 py-3 rounded-lg font-medium text-white transition"
+                                style="background-color: var(--orange-primary);"
+                                onmouseover="this.style.backgroundColor='var(--orange-dark)'"
+                                onmouseout="this.style.backgroundColor='var(--orange-primary)'">
+                            Choose Image
+                        </button>
+                        <p class="text-sm mt-3" style="color: var(--grey-medium);">or drag and drop</p>
+                    </div>
+
+                    <div id="receiptPreview" class="hidden mb-4">
+                        <img id="receiptImage" class="w-full rounded-lg border" style="border-color: var(--grey-light);">
+                    </div>
+
+                    <button id="uploadReceiptBtn" onclick="uploadReceipt()" class="w-full py-3 rounded-lg font-medium text-white transition hidden"
+                            style="background-color: var(--orange-primary);"
+                            onmouseover="this.style.backgroundColor='var(--orange-dark)'"
+                            onmouseout="this.style.backgroundColor='var(--orange-primary)'">
+                        Process with Gemini 3
+                    </button>
+
+                    <div id="receiptLoading" class="hidden text-center py-4">
+                        <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2" style="border-color: var(--orange-primary);"></div>
+                        <p class="text-sm mt-2" style="color: var(--grey-medium);">Processing with Gemini 3...</p>
+                        <span class="thinking-badge thinking-high mt-2 inline-block">MEDIUM</span>
+                    </div>
+                </div>
+
+                <!-- Parsed Expense Preview -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">Parsed Expense</h2>
+                    
+                    <div id="parsedExpense" class="hidden">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-sm font-medium" style="color: var(--grey-medium);">Merchant</label>
+                                <div id="expenseMerchant" class="text-lg font-bold" style="color: var(--grey-dark);"></div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium" style="color: var(--grey-medium);">Amount</label>
+                                <div id="expenseAmount" class="text-2xl font-bold" style="color: var(--orange-primary);"></div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium" style="color: var(--grey-medium);">Date</label>
+                                <div id="expenseDate" class="text-lg" style="color: var(--grey-dark);"></div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium" style="color: var(--grey-medium);">Category</label>
+                                <div id="expenseCategory" class="text-lg" style="color: var(--grey-dark);"></div>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium" style="color: var(--grey-medium);">Description</label>
+                                <div id="expenseDescription" class="text-sm" style="color: var(--grey-medium);"></div>
+                            </div>
+                        </div>
+
+                        <button onclick="addCashExpense()" class="w-full mt-6 py-3 rounded-lg font-medium text-white transition"
+                                style="background-color: var(--orange-primary);"
+                                onmouseover="this.style.backgroundColor='var(--orange-dark)'"
+                                onmouseout="this.style.backgroundColor='var(--orange-primary)'">
+                            Add to Cash Expenses
+                        </button>
+                    </div>
+
+                    <div id="noExpense" class="text-center py-12" style="color: var(--grey-light);">
+                        <p>Upload a receipt to see parsed details</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cash Expenses History -->
+            <div class="bg-white rounded-lg shadow p-6 mt-6">
+                <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Added Cash Expenses</h3>
+                <div id="cashExpensesList" class="space-y-2">
+                    <p class="text-sm text-center py-4" style="color: var(--grey-medium);">No cash expenses added yet</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 5: Reconciliation -->
+        <div id="content-reconciliation" class="tab-content hidden">
+            <!-- Mismatch Alerts -->
+            <div class="bg-white rounded-lg shadow p-6 mb-6">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">Mismatch Alerts</h2>
+                
+                <div class="space-y-4">
+                    <div class="border-l-4 p-4 rounded" style="border-color: var(--orange-primary); background-color: #FFEBEE;">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold" style="color: var(--orange-dark);">Balance Discrepancy</h3>
+                            <span class="text-xs px-2 py-1 rounded" style="background-color: var(--orange-primary); color: white;">HIGH PRIORITY</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: var(--grey-dark);">
+                            Your modeled balance ($2,308) is $450 less than your bank balance ($2,758).
+                        </p>
+                        <p class="text-sm font-medium" style="color: var(--orange-dark);">
+                            Likely cause: Untracked cash expenses from ATM withdrawals
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 p-4 rounded" style="border-color: var(--grey-light); background-color: var(--grey-bg);">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold" style="color: var(--grey-dark);">Large Transfer Uncategorized</h3>
+                            <span class="text-xs px-2 py-1 rounded" style="background-color: var(--grey-medium); color: white;">MEDIUM</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: var(--grey-dark);">
+                            $19,810 in transfers need categorization. Are these savings, investments, or expenses?
+                        </p>
+                        <button class="text-sm font-medium" style="color: var(--orange-primary);">
+                            Categorize Now →
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Missing Expense Prompts -->
+            <div class="bg-white rounded-lg shadow p-6 mb-6">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">Missing Expense Prompts</h2>
+                
+                <div class="space-y-4">
+                    <div class="p-4 rounded border" style="border-color: var(--orange-light); background-color: #FFF3E0;">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h3 class="font-semibold mb-1" style="color: var(--grey-dark);">ATM Withdrawal: $200</h3>
+                                <p class="text-xs" style="color: var(--grey-medium);">Jan 15, 2026 at Chase ATM</p>
+                            </div>
+                            <span class="thinking-badge thinking-high">GEMINI 3</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: var(--grey-medium);">
+                            What did you spend this $200 on? Upload receipts or manually add expenses.
+                        </p>
+                        <div class="flex gap-2">
+                            <button onclick="goToReceiptsTab()" class="flex-1 py-2 text-sm rounded border font-medium" 
+                                    style="border-color: var(--orange-primary); color: var(--orange-primary);">
+                                Upload Receipts
+                            </button>
+                            <button class="flex-1 py-2 text-sm rounded font-medium text-white" 
+                                    style="background-color: var(--orange-primary);">
+                                Add Manually
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded border" style="border-color: var(--orange-light); background-color: #FFF3E0;">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <h3 class="font-semibold mb-1" style="color: var(--grey-dark);">ATM Withdrawal: $150</h3>
+                                <p class="text-xs" style="color: var(--grey-medium);">Jan 20, 2026 at Bank of America ATM</p>
+                            </div>
+                            <span class="thinking-badge thinking-high">GEMINI 3</span>
+                        </div>
+                        <p class="text-sm mb-3" style="color: var(--grey-medium);">
+                            Track where this $150 went to maintain accurate financial state.
+                        </p>
+                        <div class="flex gap-2">
+                            <button onclick="goToReceiptsTab()" class="flex-1 py-2 text-sm rounded border font-medium" 
+                                    style="border-color: var(--orange-primary); color: var(--orange-primary);">
+                                Upload Receipts
+                            </button>
+                            <button class="flex-1 py-2 text-sm rounded font-medium text-white" 
+                                    style="background-color: var(--orange-primary);">
+                                Add Manually
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suggested Corrections -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">Suggested Corrections</h2>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 rounded" style="background-color: var(--grey-bg);">
+                        <div>
+                            <p class="text-sm font-medium" style="color: var(--grey-dark);">Add $450 in cash expenses</p>
+                            <p class="text-xs" style="color: var(--grey-medium);">To reconcile balance discrepancy</p>
+                        </div>
+                        <button class="px-4 py-2 text-sm rounded font-medium text-white" 
+                                style="background-color: var(--orange-primary);">
+                            Apply
+                        </button>
+                    </div>
+
+                    <div class="flex justify-between items-center p-3 rounded" style="background-color: var(--grey-bg);">
+                        <div>
+                            <p class="text-sm font-medium" style="color: var(--grey-dark);">Categorize $19,810 transfers</p>
+                            <p class="text-xs" style="color: var(--grey-medium);">Improves spending analysis accuracy</p>
+                        </div>
+                        <button class="px-4 py-2 text-sm rounded font-medium text-white" 
+                                style="background-color: var(--orange-primary);">
+                            Review
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000';
+        const USER_ID = 'demo_user_123';
+        let currentReceipt = null;
+        let cashExpenses = [];
+
+        // Tab Management
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('[id^="tab-"]').forEach(el => {
+                el.classList.remove('tab-active');
+                el.classList.add('tab-inactive');
+            });
+            
+            // Show selected tab
+            document.getElementById(`content-${tabName}`).classList.remove('hidden');
+            document.getElementById(`tab-${tabName}`).classList.add('tab-active');
+            document.getElementById(`tab-${tabName}`).classList.remove('tab-inactive');
+        }
+
+        function goToReceiptsTab() {
+            showTab('receipts');
+            // Trigger file input click
+            setTimeout(() => {
+                document.getElementById('receiptInput').click();
+            }, 100);
+        }
+
+        // Load transactions on page load
+        window.addEventListener('load', function() {
+            fetch(`${API_BASE}/load-transactions?user_id=${USER_ID}`, {
+                method: 'POST'
+            })
+            .then(r => r.json())
+            .then(data => console.log('Transactions loaded:', data))
+            .catch(err => console.log('Backend not ready'));
+
+            // Initialize cashflow chart
+            initCashflowChart();
+        });
+
+        // Plaid Connection
+        let plaidLinkHandler = null;
+
+        async function connectPlaid() {
+            try {
+                // Get link token from backend
+                const response = await fetch(`${API_BASE}/plaid/create-link-token`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ user_id: USER_ID })
+                });
+                
+                const data = await response.json();
+                
+                // Initialize Plaid Link
+                plaidLinkHandler = Plaid.create({
+                    token: data.link_token,
+                    onSuccess: async (public_token, metadata) => {
+                        console.log('Plaid Link success!', metadata);
+                        
+                        // Exchange public token for access token
+                        const exchangeResponse = await fetch(`${API_BASE}/plaid/exchange-token`, {
+                            method: 'POST',
+                            headers: {'Content-Type': 'application/json'},
+                            body: JSON.stringify({
+                                user_id: USER_ID,
+                                public_token: public_token
+                            })
+                        });
+                        
+                        const exchangeData = await exchangeResponse.json();
+                        console.log('Token exchanged:', exchangeData);
+                        
+                        // Fetch transactions
+                        const txResponse = await fetch(`${API_BASE}/plaid/fetch-transactions`, {
+                            method: 'POST',
+                            headers: {'Content-Type': 'application/json'},
+                            body: JSON.stringify({ user_id: USER_ID })
+                        });
+                        
+                        const txData = await txResponse.json();
+                        alert(`Connected to ${metadata.institution.name}!\n\nFetched ${txData.transactions_count} transactions\nBalance: $${txData.balance.toFixed(2)}`);
+                        
+                        // Reload page to show new data
+                        location.reload();
+                    },
+                    onExit: (err, metadata) => {
+                        if (err) {
+                            console.error('Plaid Link error:', err);
+                            alert('Error connecting to bank: ' + err.error_message);
+                        }
+                    },
+                });
+                
+                // Open Plaid Link
+                plaidLinkHandler.open();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error initializing Plaid Link. Make sure backend is running and Plaid credentials are configured.');
+            }
+        }
+
+        // AI Accountant
+        async function askAI() {
+            const message = document.getElementById('aiMessage').value;
+            const personality = document.getElementById('aiPersonality').value;
+            
+            const responseDiv = document.getElementById('aiResponse');
+            const loadingDiv = document.getElementById('aiLoading');
+            
+            responseDiv.classList.add('hidden');
+            loadingDiv.classList.remove('hidden');
+            
+            try {
+                const response = await fetch(`${API_BASE}/chat`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        user_id: USER_ID,
+                        message: message,
+                        personality: personality
+                    })
+                });
+                
+                const data = await response.json();
+                
+                loadingDiv.classList.add('hidden');
+                responseDiv.classList.remove('hidden');
+                
+                document.getElementById('aiAgent').textContent = data.agent_used;
+                document.getElementById('aiTone').textContent = data.tone;
+                
+                // Clean up response - remove markdown formatting
+                let cleanResponse = data.response.response;
+                cleanResponse = cleanResponse.replace(/#{1,6}\s/g, ''); // Remove markdown headers
+                cleanResponse = cleanResponse.replace(/\*\*/g, ''); // Remove bold markdown
+                cleanResponse = cleanResponse.replace(/\*/g, ''); // Remove italic markdown
+                cleanResponse = cleanResponse.replace(/`/g, ''); // Remove code backticks
+                cleanResponse = cleanResponse.trim();
+                
+                document.getElementById('aiResponseText').textContent = cleanResponse;
+                
+                // Show thinking level based on agent
+                const thinkingBadge = document.getElementById('aiThinking');
+                if (data.agent_used === 'general') {
+                    thinkingBadge.textContent = 'MEDIUM';
+                    thinkingBadge.className = 'thinking-badge thinking-low';
+                } else {
+                    thinkingBadge.textContent = 'HIGH';
+                    thinkingBadge.className = 'thinking-badge thinking-high';
+                }
+                
+            } catch (error) {
+                loadingDiv.classList.add('hidden');
+                alert('Error connecting to backend. Make sure it\'s running on http://localhost:8000');
+                console.error('Error:', error);
+            }
+        }
+
+        // Receipt Upload
+        function handleReceiptUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            currentReceipt = file;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('receiptImage').src = e.target.result;
+                document.getElementById('receiptPreview').classList.remove('hidden');
+                document.getElementById('uploadReceiptBtn').classList.remove('hidden');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        async function uploadReceipt() {
+            if (!currentReceipt) return;
+
+            document.getElementById('uploadReceiptBtn').classList.add('hidden');
+            document.getElementById('receiptLoading').classList.remove('hidden');
+
+            const formData = new FormData();
+            formData.append('image', currentReceipt);
+
+            try {
+                const response = await fetch(`${API_BASE}/upload-receipt?user_id=${USER_ID}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                
+                document.getElementById('receiptLoading').classList.add('hidden');
+                
+                if (data.status === 'ok') {
+                    const tx = data.transaction;
+                    document.getElementById('expenseMerchant').textContent = tx.merchant || 'Unknown';
+                    document.getElementById('expenseAmount').textContent = '$' + (tx.amount || 0);
+                    document.getElementById('expenseDate').textContent = tx.date || 'Unknown';
+                    document.getElementById('expenseCategory').textContent = tx.category || 'Uncategorized';
+                    document.getElementById('expenseDescription').textContent = tx.description || 'No description';
+                    
+                    document.getElementById('noExpense').classList.add('hidden');
+                    document.getElementById('parsedExpense').classList.remove('hidden');
+                    
+                    currentReceipt = tx;
+                }
+            } catch (error) {
+                document.getElementById('receiptLoading').classList.add('hidden');
+                document.getElementById('uploadReceiptBtn').classList.remove('hidden');
+                alert('Error uploading receipt. Make sure backend is running.');
+                console.error('Error:', error);
+            }
+        }
+
+        function addCashExpense() {
+            if (!currentReceipt) return;
+
+            // Add category to expense for consistency
+            const categorizedExpense = {
+                ...currentReceipt,
+                category: currentReceipt.category || 'Uncategorized',
+                type: 'cash_expense'
+            };
+
+            cashExpenses.push(categorizedExpense);
+            
+            const listEl = document.getElementById('cashExpensesList');
+            listEl.innerHTML = '';
+            
+            cashExpenses.forEach((expense, idx) => {
+                const div = document.createElement('div');
+                div.className = 'flex justify-between items-center py-2 border-b';
+                div.style.borderColor = 'var(--grey-bg)';
+                div.innerHTML = `
+                    <div>
+                        <div class="font-medium text-sm" style="color: var(--grey-dark);">${expense.merchant || 'Unknown'}</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">${expense.category || 'Uncategorized'} • ${expense.date || 'Unknown date'}</div>
+                    </div>
+                    <div class="text-sm font-bold" style="color: var(--orange-dark);">-$${expense.amount || 0}</div>
+                `;
+                listEl.appendChild(div);
+            });
+
+            // Update transaction list in Transactions tab
+            updateTransactionsList();
+
+            alert('Cash expense added and categorized! Check Transactions and Reconciliation tabs.');
+            
+            // Reset
+            document.getElementById('receiptPreview').classList.add('hidden');
+            document.getElementById('parsedExpense').classList.add('hidden');
+            document.getElementById('noExpense').classList.remove('hidden');
+            document.getElementById('receiptInput').value = '';
+            currentReceipt = null;
+        }
+
+        function updateTransactionsList() {
+            // Add cash expenses to transaction list for consistency
+            const txList = document.getElementById('transactionList');
+            
+            // Keep existing Plaid transactions and add cash expenses
+            cashExpenses.forEach(expense => {
+                const exists = Array.from(txList.children).some(child => 
+                    child.textContent.includes(expense.merchant)
+                );
+                
+                if (!exists) {
+                    const div = document.createElement('div');
+                    div.className = 'flex justify-between items-center py-2 border-b';
+                    div.style.borderColor = 'var(--grey-bg)';
+                    div.innerHTML = `
+                        <div>
+                            <div class="font-medium text-sm" style="color: var(--grey-dark);">${expense.merchant || 'Unknown'}</div>
+                            <div class="text-xs" style="color: var(--grey-medium);">${expense.category || 'Uncategorized'} • Cash</div>
+                        </div>
+                        <div class="text-sm font-bold" style="color: var(--orange-dark);">-$${expense.amount || 0}</div>
+                    `;
+                    txList.insertBefore(div, txList.firstChild);
+                }
+            });
+        }
+
+        // Cashflow Chart
+        function initCashflowChart() {
+            const ctx = document.getElementById('cashflowChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Today', 'Day 5', 'Day 10', 'Day 15', 'Day 20', 'Day 25', 'Day 30'],
+                    datasets: [{
+                        label: 'Projected Balance',
+                        data: [2758, 2200, 1800, 1500, 2100, 1900, 1700],
+                        borderColor: '#D84315',
+                        backgroundColor: 'rgba(216, 67, 21, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

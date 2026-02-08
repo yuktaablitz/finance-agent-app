@@ -21,7 +21,9 @@ class ToneEngine:
     TONES = {
         "zen_coach": "Let's think about your long-term peace of mind...",
         "tough_love": "You said you wanted to save. Skip the bag.",
-        "supportive": "I know it's tempting, but you're doing great staying on track!"
+        "supportive": "I know it's tempting, but you're doing great staying on track!",
+        "to_the_point": "Here are the facts.",
+        "no_bs": "Let's cut to the chase."
     }
 
     def __init__(self):
@@ -63,7 +65,7 @@ class ToneEngine:
 
     def _normalize_tone(self, tone: str) -> Optional[str]:
         """
-        Normalize tone input to one of the three valid tones.
+        Normalize tone input to one of the five valid tones.
         """
         if not tone:
             return None
@@ -77,6 +79,10 @@ class ToneEngine:
             return "tough_love"
         elif tone_lower in ["supportive", "support", "encouraging", "kind"]:
             return "supportive"
+        elif tone_lower in ["to_the_point", "to the point", "brief", "concise"]:
+            return "to_the_point"
+        elif tone_lower in ["no_bs", "no bs", "nobs", "direct", "blunt"]:
+            return "no_bs"
         
         return None
 

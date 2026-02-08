@@ -6,14 +6,25 @@
     <title>AccountantAI - Gemini-Powered Finance Assistant</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+    <style>
+        :root {
+            --orange-primary: #D84315;
+            --orange-dark: #BF360C;
+            --orange-light: #FF6E40;
+            --grey-dark: #263238;
+            --grey-medium: #455A64;
+            --grey-light: #78909C;
+            --grey-bg: #ECEFF1;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-50 to-blue-100 min-h-screen">
+<body class="bg-gray-100 min-h-screen" style="background-color: var(--grey-bg);">
     <div class="container mx-auto px-4 py-8">
         <!-- Header -->
         <div class="text-center mb-12">
-            <h1 class="text-5xl font-bold text-indigo-900 mb-4">💰 AccountantAI</h1>
-            <p class="text-xl text-gray-700">Gemini 3-Powered Personal Finance Assistant</p>
-            <p class="text-sm text-gray-600 mt-2">Context-Aware Reasoning • Dynamic Personality • Multi-Agent Architecture</p>
+            <h1 class="text-5xl font-bold mb-4" style="color: var(--orange-primary);">AccountantAI</h1>
+            <p class="text-xl" style="color: var(--grey-dark);">Gemini 3-Powered Personal Finance Assistant</p>
+            <p class="text-sm mt-2" style="color: var(--grey-medium);">Context-Aware Reasoning | Dynamic Personality | Multi-Agent Architecture</p>
         </div>
 
         <!-- Pipeline Visualization -->
@@ -23,11 +34,10 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <!-- Step 1: Plaid -->
                 <div class="flex-1 text-center">
-                    <div class="bg-green-100 rounded-lg p-6 border-2 border-green-300">
-                        <div class="text-4xl mb-2">🏦</div>
-                        <h3 class="font-bold text-lg mb-2">1. Bank Connection</h3>
-                        <p class="text-sm text-gray-600">Plaid Link</p>
-                        <button id="plaidButton" class="mt-4 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+                    <div class="bg-white rounded-lg p-6 border-2" style="border-color: var(--grey-light);">
+                        <h3 class="font-bold text-lg mb-2" style="color: var(--grey-dark);">1. Bank Connection</h3>
+                        <p class="text-sm mb-4" style="color: var(--grey-medium);">Plaid Link</p>
+                        <button id="plaidButton" class="mt-4 text-white px-6 py-2 rounded-lg transition" style="background-color: var(--orange-primary);" onmouseover="this.style.backgroundColor='var(--orange-dark)'" onmouseout="this.style.backgroundColor='var(--orange-primary)'">
                             Connect Bank
                         </button>
                     </div>
@@ -37,12 +47,11 @@
 
                 <!-- Step 2: Backend -->
                 <div class="flex-1 text-center">
-                    <div class="bg-blue-100 rounded-lg p-6 border-2 border-blue-300">
-                        <div class="text-4xl mb-2">⚙️</div>
-                        <h3 class="font-bold text-lg mb-2">2. Data Processing</h3>
-                        <p class="text-sm text-gray-600">FastAPI Backend</p>
+                    <div class="bg-white rounded-lg p-6 border-2" style="border-color: var(--grey-light);">
+                        <h3 class="font-bold text-lg mb-2" style="color: var(--grey-dark);">2. Data Processing</h3>
+                        <p class="text-sm mb-4" style="color: var(--grey-medium);">FastAPI Backend</p>
                         <div class="mt-4 text-xs">
-                            <span class="bg-blue-200 px-2 py-1 rounded">478 Transactions</span>
+                            <span class="px-2 py-1 rounded" style="background-color: var(--grey-bg); color: var(--grey-dark);">478 Transactions</span>
                         </div>
                     </div>
                 </div>
@@ -51,12 +60,11 @@
 
                 <!-- Step 3: Gemini -->
                 <div class="flex-1 text-center">
-                    <div class="bg-purple-100 rounded-lg p-6 border-2 border-purple-300">
-                        <div class="text-4xl mb-2">🤖</div>
-                        <h3 class="font-bold text-lg mb-2">3. AI Reasoning</h3>
-                        <p class="text-sm text-gray-600">Gemini 3 Flash</p>
+                    <div class="bg-white rounded-lg p-6 border-2" style="border-color: var(--grey-light);">
+                        <h3 class="font-bold text-lg mb-2" style="color: var(--grey-dark);">3. AI Reasoning</h3>
+                        <p class="text-sm mb-4" style="color: var(--grey-medium);">Gemini 3 Flash</p>
                         <div class="mt-4 text-xs">
-                            <span class="bg-purple-200 px-2 py-1 rounded">thinking_level: high</span>
+                            <span class="px-2 py-1 rounded" style="background-color: var(--orange-light); color: white;">thinking_level: high</span>
                         </div>
                     </div>
                 </div>
@@ -65,12 +73,11 @@
 
                 <!-- Step 4: User -->
                 <div class="flex-1 text-center">
-                    <div class="bg-indigo-100 rounded-lg p-6 border-2 border-indigo-300">
-                        <div class="text-4xl mb-2">💬</div>
-                        <h3 class="font-bold text-lg mb-2">4. Personalized Advice</h3>
-                        <p class="text-sm text-gray-600">Context-Aware</p>
+                    <div class="bg-white rounded-lg p-6 border-2" style="border-color: var(--grey-light);">
+                        <h3 class="font-bold text-lg mb-2" style="color: var(--grey-dark);">4. Personalized Advice</h3>
+                        <p class="text-sm mb-4" style="color: var(--grey-medium);">Context-Aware</p>
                         <div class="mt-4 text-xs">
-                            <span class="bg-indigo-200 px-2 py-1 rounded">5 Personalities</span>
+                            <span class="px-2 py-1 rounded" style="background-color: var(--grey-bg); color: var(--grey-dark);">5 Personalities</span>
                         </div>
                     </div>
                 </div>
@@ -81,103 +88,85 @@
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Chat Demo -->
             <div class="bg-white rounded-lg shadow-xl p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">💬 AI Chat Assistant</h3>
+                <h3 class="text-xl font-bold mb-4" style="color: var(--grey-dark);">AI Chat Assistant</h3>
                 
                 <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Personality</label>
-                    <select id="personality" class="w-full border border-gray-300 rounded-lg px-4 py-2">
-                        <option value="zen_coach">🧘 Zen Coach</option>
-                        <option value="tough_love">💪 Tough Love</option>
-                        <option value="supportive">🤗 Supportive</option>
-                        <option value="to_the_point">🎯 To The Point</option>
-                        <option value="no_bs">🔥 No BS</option>
+                    <label class="block text-sm font-medium mb-2" style="color: var(--grey-dark);">Personality</label>
+                    <select id="personality" class="w-full border rounded-lg px-4 py-2" style="border-color: var(--grey-light);">
+                        <option value="zen_coach">Zen Coach</option>
+                        <option value="tough_love">Tough Love</option>
+                        <option value="supportive">Supportive</option>
+                        <option value="to_the_point">To The Point</option>
+                        <option value="no_bs">No BS</option>
                     </select>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Your Question</label>
+                    <label class="block text-sm font-medium mb-2" style="color: var(--grey-dark);">Your Question</label>
                     <input type="text" id="userMessage" 
-                           class="w-full border border-gray-300 rounded-lg px-4 py-2" 
+                           class="w-full border rounded-lg px-4 py-2" 
+                           style="border-color: var(--grey-light);"
                            placeholder="Can I afford a $200 jacket?"
                            value="Can I afford a $200 jacket?">
                 </div>
 
-                <button id="askButton" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition font-medium">
+                <button id="askButton" class="w-full text-white px-6 py-3 rounded-lg transition font-medium" style="background-color: var(--orange-primary);" onmouseover="this.style.backgroundColor='var(--orange-dark)'" onmouseout="this.style.backgroundColor='var(--orange-primary)'">
                     Ask Gemini 3
                 </button>
 
                 <div id="response" class="mt-6 hidden">
-                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div class="rounded-lg p-4 border" style="background-color: var(--grey-bg); border-color: var(--grey-light);">
                         <div class="flex items-start gap-3">
-                            <div class="text-2xl">🤖</div>
                             <div class="flex-1">
-                                <div class="text-xs text-gray-500 mb-2">
-                                    <span id="agentUsed" class="font-medium"></span> • 
+                                <div class="text-xs mb-2" style="color: var(--grey-medium);">
+                                    <span id="agentUsed" class="font-medium"></span> | 
                                     <span id="toneUsed"></span>
                                 </div>
-                                <div id="responseText" class="text-sm text-gray-800 whitespace-pre-wrap"></div>
+                                <div id="responseText" class="text-sm whitespace-pre-wrap" style="color: var(--grey-dark);"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="loading" class="mt-6 hidden text-center">
-                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
-                    <p class="text-sm text-gray-600 mt-2">Gemini 3 is thinking...</p>
+                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2" style="border-color: var(--orange-primary);"></div>
+                    <p class="text-sm mt-2" style="color: var(--grey-medium);">Gemini 3 is thinking...</p>
                 </div>
             </div>
 
             <!-- Features -->
             <div class="bg-white rounded-lg shadow-xl p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">🚀 Key Features</h3>
+                <h3 class="text-xl font-bold mb-4" style="color: var(--grey-dark);">Key Features</h3>
                 
                 <div class="space-y-4">
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">🧠</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Gemini 3 Flash Preview</h4>
-                            <p class="text-sm text-gray-600">Latest model with advanced reasoning and thinking levels</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Gemini 3 Flash Preview</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">Latest model with advanced reasoning and thinking levels</p>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">📊</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Context-Aware Analysis</h4>
-                            <p class="text-sm text-gray-600">References your actual spending patterns and balance</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Context-Aware Analysis</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">References your actual spending patterns and balance</p>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">🎭</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Dynamic Personality</h4>
-                            <p class="text-sm text-gray-600">5 communication styles to match your preference</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Dynamic Personality</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">5 communication styles to match your preference</p>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">🔍</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Multi-Agent System</h4>
-                            <p class="text-sm text-gray-600">Specialized agents for spending, budgeting, investing</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Multi-Agent System</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">Specialized agents for spending, budgeting, investing</p>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">📸</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Receipt Understanding</h4>
-                            <p class="text-sm text-gray-600">Multimodal OCR with high-resolution processing</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Receipt Understanding</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">Multimodal OCR with high-resolution processing</p>
                     </div>
 
-                    <div class="flex items-start gap-3">
-                        <div class="text-2xl">💡</div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Professional Frameworks</h4>
-                            <p class="text-sm text-gray-600">50/30/20 budgeting, emergency fund calculations</p>
-                        </div>
+                    <div class="border-l-4 pl-4" style="border-color: var(--orange-primary);">
+                        <h4 class="font-semibold" style="color: var(--grey-dark);">Professional Frameworks</h4>
+                        <p class="text-sm" style="color: var(--grey-medium);">50/30/20 budgeting, emergency fund calculations</p>
                     </div>
                 </div>
             </div>
@@ -185,23 +174,23 @@
 
         <!-- Transaction Data Status -->
         <div class="mt-8 bg-white rounded-lg shadow-xl p-6">
-            <h3 class="text-xl font-bold text-gray-800 mb-4">📈 Current Financial Snapshot</h3>
+            <h3 class="text-xl font-bold mb-4" style="color: var(--grey-dark);">Current Financial Snapshot</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="stats">
                 <div class="text-center">
-                    <div class="text-3xl font-bold text-indigo-600">478</div>
-                    <div class="text-sm text-gray-600">Transactions</div>
+                    <div class="text-3xl font-bold" style="color: var(--orange-primary);">478</div>
+                    <div class="text-sm" style="color: var(--grey-medium);">Transactions</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-3xl font-bold text-green-600">$42,500</div>
-                    <div class="text-sm text-gray-600">Income</div>
+                    <div class="text-3xl font-bold" style="color: var(--grey-dark);">$42,500</div>
+                    <div class="text-sm" style="color: var(--grey-medium);">Income</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-3xl font-bold text-red-600">$39,742</div>
-                    <div class="text-sm text-gray-600">Spent</div>
+                    <div class="text-3xl font-bold" style="color: var(--orange-dark);">$39,742</div>
+                    <div class="text-sm" style="color: var(--grey-medium);">Spent</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-3xl font-bold text-blue-600">$2,758</div>
-                    <div class="text-sm text-gray-600">Balance</div>
+                    <div class="text-3xl font-bold" style="color: var(--grey-dark);">$2,758</div>
+                    <div class="text-sm" style="color: var(--grey-medium);">Balance</div>
                 </div>
             </div>
         </div>
@@ -214,7 +203,7 @@
         // Plaid Link Handler (Sandbox mode for demo)
         document.getElementById('plaidButton').addEventListener('click', function() {
             // For demo purposes, show what would happen
-            alert('🏦 Plaid Link Demo\n\nIn production, this would:\n1. Open Plaid Link UI\n2. User selects their bank\n3. Authenticates securely\n4. We receive transaction data\n5. Data flows to backend\n\nFor this demo, we\'re using 478 pre-loaded synthetic transactions.');
+            alert('Plaid Link Demo\n\nIn production, this would:\n1. Open Plaid Link UI\n2. User selects their bank\n3. Authenticates securely\n4. We receive transaction data\n5. Data flows to backend\n\nFor this demo, we\'re using 478 pre-loaded synthetic transactions.');
             
             // Simulate loading transactions
             fetch(`${API_BASE}/load-transactions?user_id=${USER_ID}`, {
@@ -223,11 +212,11 @@
             .then(r => r.json())
             .then(data => {
                 console.log('Transactions loaded:', data);
-                alert(`✅ Loaded ${data.transactions_loaded} transactions!\n\nTop category: Food & Drink ($${data.top_categories['Food and Drink'].toFixed(2)})`);
+                alert(`Loaded ${data.transactions_loaded} transactions!\n\nTop category: Food & Drink ($${data.top_categories['Food and Drink'].toFixed(2)})`);
             })
             .catch(err => {
                 console.error('Error:', err);
-                alert('⚠️ Make sure backend is running on http://localhost:8000');
+                alert('Error: Make sure backend is running on http://localhost:8000');
             });
         });
 
@@ -264,7 +253,7 @@
                 
             } catch (error) {
                 loadingDiv.classList.add('hidden');
-                alert('⚠️ Error connecting to backend. Make sure it\'s running on http://localhost:8000');
+                alert('Error connecting to backend. Make sure it\'s running on http://localhost:8000');
                 console.error('Error:', error);
             }
         });
