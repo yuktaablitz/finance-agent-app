@@ -1,0 +1,4303 @@
+[
+    {
+      "transaction_id": "tx_100",
+      "date": "2025-10-31",
+      "name": "TECH SOLUTIONS INC PAYROLL",
+      "amount": 4250.00,
+      "category": ["Transfer", "Payroll"],
+      "merchant_name": "Tech Solutions Inc",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_099",
+      "date": "2025-10-31",
+      "name": "DOMINO'S PIZZA 9921",
+      "amount": -38.50,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "Domino's",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_098",
+      "date": "2025-10-31",
+      "name": "UBER TRIP HALLOWEEN",
+      "amount": -45.20,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_097",
+      "date": "2025-10-30",
+      "name": "PARTY CITY #112",
+      "amount": -65.40,
+      "category": ["Shops", "Party Supplies"],
+      "merchant_name": "Party City",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_096",
+      "date": "2025-10-30",
+      "name": "BEVMO #221",
+      "amount": -89.20,
+      "category": ["Food and Drink", "Liquor Store"],
+      "merchant_name": "BevMo",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_095",
+      "date": "2025-10-29",
+      "name": "TRADER JOE'S #521",
+      "amount": -45.60,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_094",
+      "date": "2025-10-29",
+      "name": "SPOTIFY USA",
+      "amount": -11.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Spotify",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_093",
+      "date": "2025-10-28",
+      "name": "SHELL OIL 12345678",
+      "amount": -42.10,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_092",
+      "date": "2025-10-28",
+      "name": "7-ELEVEN 2211",
+      "amount": -8.45,
+      "category": ["Shops", "Convenience Store"],
+      "merchant_name": "7-Eleven",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_091",
+      "date": "2025-10-27",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -6.45,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_090",
+      "date": "2025-10-26",
+      "name": "AMZN Mktp US*COSTUME",
+      "amount": -34.99,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_089",
+      "date": "2025-10-26",
+      "name": "WHOLE FOODS MKT",
+      "amount": -112.30,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Whole Foods",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_088",
+      "date": "2025-10-25",
+      "name": "THE IRISH PUB DOWNTOWN",
+      "amount": -55.40,
+      "category": ["Food and Drink", "Bar"],
+      "merchant_name": "The Irish Pub",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_087",
+      "date": "2025-10-25",
+      "name": "UBER TRIP 221A",
+      "amount": -22.50,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_086",
+      "date": "2025-10-24",
+      "name": "CHIPOTLE 2321",
+      "amount": -14.80,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "Chipotle",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_085",
+      "date": "2025-10-24",
+      "name": "CVS PHARMACY #9921",
+      "amount": -18.25,
+      "category": ["Shops", "Pharmacy"],
+      "merchant_name": "CVS",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_084",
+      "date": "2025-10-23",
+      "name": "SHELL OIL 9912",
+      "amount": -48.50,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_083",
+      "date": "2025-10-22",
+      "name": "DOORDASH*SUSHI",
+      "amount": -42.50,
+      "category": ["Food and Drink", "Delivery"],
+      "merchant_name": "DoorDash",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_082",
+      "date": "2025-10-21",
+      "name": "APPLE.COM/BILL",
+      "amount": -2.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Apple",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_081",
+      "date": "2025-10-21",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -5.95,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_080",
+      "date": "2025-10-20",
+      "name": "ATM WITHDRAWAL - CHASE",
+      "amount": -100.00,
+      "category": ["Transfer", "Withdrawal", "ATM"],
+      "merchant_name": "Chase",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_079",
+      "date": "2025-10-20",
+      "name": "TARGET T-2311",
+      "amount": -34.20,
+      "category": ["Shops", "Department Store"],
+      "merchant_name": "Target",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_078",
+      "date": "2025-10-19",
+      "name": "AMC THEATRES KIOSK",
+      "amount": -28.50,
+      "category": ["Entertainment", "Movies"],
+      "merchant_name": "AMC Theatres",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_077",
+      "date": "2025-10-18",
+      "name": "UNIQLO USA",
+      "amount": -45.90,
+      "category": ["Shops", "Clothing"],
+      "merchant_name": "Uniqlo",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_076",
+      "date": "2025-10-18",
+      "name": "BLUE BOTTLE COFFEE",
+      "amount": -12.50,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Blue Bottle Coffee",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_075",
+      "date": "2025-10-17",
+      "name": "SAFEWAY #2911",
+      "amount": -98.40,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Safeway",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_074",
+      "date": "2025-10-17",
+      "name": "NETFLIX.COM",
+      "amount": -15.49,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Netflix",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_073",
+      "date": "2025-10-16",
+      "name": "SQ *LOCAL BAKERY",
+      "amount": -9.50,
+      "category": ["Food and Drink", "Bakery"],
+      "merchant_name": "Square",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_072",
+      "date": "2025-10-15",
+      "name": "PG&E UTILITIES PAYMENT",
+      "amount": -155.20,
+      "category": ["Service", "Utilities"],
+      "merchant_name": "PG&E",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_071",
+      "date": "2025-10-15",
+      "name": "COMCAST INTERNET AUTOPAY",
+      "amount": -79.99,
+      "category": ["Service", "Internet"],
+      "merchant_name": "Comcast",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_070",
+      "date": "2025-10-14",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -5.95,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_069",
+      "date": "2025-10-13",
+      "name": "LYFT RIDE *123",
+      "amount": -16.50,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Lyft",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_068",
+      "date": "2025-10-12",
+      "name": "WALGREENS #2211",
+      "amount": -14.50,
+      "category": ["Shops", "Pharmacy"],
+      "merchant_name": "Walgreens",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_067",
+      "date": "2025-10-12",
+      "name": "MCDONALD'S #1122",
+      "amount": -12.45,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "McDonald's",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_066",
+      "date": "2025-10-11",
+      "name": "TRADER JOE'S #521",
+      "amount": -86.50,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_065",
+      "date": "2025-10-11",
+      "name": "HULU SUBSCRIPTION",
+      "amount": -7.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Hulu",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_064",
+      "date": "2025-10-10",
+      "name": "SHELL OIL 9999",
+      "amount": -52.00,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_063",
+      "date": "2025-10-09",
+      "name": "CHIPOTLE 2321",
+      "amount": -13.50,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "Chipotle",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_062",
+      "date": "2025-10-08",
+      "name": "BEST BUY #112",
+      "amount": -129.99,
+      "category": ["Shops", "Electronics"],
+      "merchant_name": "Best Buy",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_061",
+      "date": "2025-10-07",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -6.45,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_060",
+      "date": "2025-10-06",
+      "name": "AMZN Mktp US*3Z11",
+      "amount": -22.40,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_059",
+      "date": "2025-10-05",
+      "name": "THE HOME DEPOT",
+      "amount": -45.60,
+      "category": ["Shops", "Hardware"],
+      "merchant_name": "Home Depot",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_058",
+      "date": "2025-10-04",
+      "name": "SUSHIRRITO DOWNTOWN",
+      "amount": -19.50,
+      "category": ["Food and Drink", "Restaurants"],
+      "merchant_name": "Sushirrito",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_057",
+      "date": "2025-10-03",
+      "name": "SAFEWAY #2911",
+      "amount": -134.22,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Safeway",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_056",
+      "date": "2025-10-03",
+      "name": "EXXONMOBIL 1122",
+      "amount": -49.50,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "ExxonMobil",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_055",
+      "date": "2025-10-02",
+      "name": "GYM MEMBERSHIP FITWORLD",
+      "amount": -45.00,
+      "category": ["Service", "Gym"],
+      "merchant_name": "FitWorld",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_054",
+      "date": "2025-10-02",
+      "name": "ADOBE CREATIVE CLOUD",
+      "amount": -54.99,
+      "category": ["Service", "Software"],
+      "merchant_name": "Adobe",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_053",
+      "date": "2025-10-01",
+      "name": "LANDLORD RENT PAYMENT - OCTOBER",
+      "amount": -1850.00,
+      "category": ["Transfer", "Rent"],
+      "merchant_name": "Property Management",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_052",
+      "date": "2025-10-01",
+      "name": "RENTERS INSURANCE",
+      "amount": -15.50,
+      "category": ["Service", "Insurance"],
+      "merchant_name": "Lemonade",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_051",
+      "date": "2025-09-30",
+      "name": "TECH SOLUTIONS INC PAYROLL",
+      "amount": 4250.00,
+      "category": ["Transfer", "Payroll"],
+      "merchant_name": "Tech Solutions Inc",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_050",
+      "date": "2025-09-29",
+      "name": "UBER EATS ORDER",
+      "amount": -32.40,
+      "category": ["Food and Drink", "Delivery"],
+      "merchant_name": "Uber Eats",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_049",
+      "date": "2025-09-29",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -5.95,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_048",
+      "date": "2025-09-28",
+      "name": "TARGET T-2311",
+      "amount": -56.80,
+      "category": ["Shops", "Department Store"],
+      "merchant_name": "Target",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_047",
+      "date": "2025-09-27",
+      "name": "LOCAL PUB & GRILL",
+      "amount": -48.20,
+      "category": ["Food and Drink", "Restaurants"],
+      "merchant_name": "Local Pub",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_046",
+      "date": "2025-09-27",
+      "name": "UBER TRIP 331A",
+      "amount": -24.50,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_045",
+      "date": "2025-09-26",
+      "name": "WHOLE FOODS MKT",
+      "amount": -78.12,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Whole Foods",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_044",
+      "date": "2025-09-25",
+      "name": "CHEVRON 00291 CA",
+      "amount": -45.00,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Chevron",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_043",
+      "date": "2025-09-25",
+      "name": "DOORDASH*THAI",
+      "amount": -38.50,
+      "category": ["Food and Drink", "Restaurants"],
+      "merchant_name": "DoorDash",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_042",
+      "date": "2025-09-24",
+      "name": "AMZN Mktp US*9X11",
+      "amount": -16.99,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_041",
+      "date": "2025-09-24",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -6.45,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_040",
+      "date": "2025-09-23",
+      "name": "CVS PHARMACY #9921",
+      "amount": -14.20,
+      "category": ["Shops", "Pharmacy"],
+      "merchant_name": "CVS",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_039",
+      "date": "2025-09-22",
+      "name": "DUNKIN DONUTS 221",
+      "amount": -8.75,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Dunkin Donuts",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_038",
+      "date": "2025-09-21",
+      "name": "APPLE.COM/BILL",
+      "amount": -9.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Apple",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_037",
+      "date": "2025-09-20",
+      "name": "TRADER JOE'S #521",
+      "amount": -82.45,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_036",
+      "date": "2025-09-19",
+      "name": "SHELL OIL 12345678",
+      "amount": -46.00,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_035",
+      "date": "2025-09-18",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -5.95,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_034",
+      "date": "2025-09-17",
+      "name": "ATM WITHDRAWAL - CHASE",
+      "amount": -80.00,
+      "category": ["Transfer", "Withdrawal", "ATM"],
+      "merchant_name": "Chase",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_033",
+      "date": "2025-09-16",
+      "name": "OFFICE MAX #221",
+      "amount": -22.45,
+      "category": ["Shops", "Office Supplies"],
+      "merchant_name": "Office Max",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_032",
+      "date": "2025-09-15",
+      "name": "PG&E UTILITIES PAYMENT",
+      "amount": -148.20,
+      "category": ["Service", "Utilities"],
+      "merchant_name": "PG&E",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_031",
+      "date": "2025-09-15",
+      "name": "COMCAST INTERNET AUTOPAY",
+      "amount": -79.99,
+      "category": ["Service", "Internet"],
+      "merchant_name": "Comcast",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_030",
+      "date": "2025-09-14",
+      "name": "SAFEWAY #2911",
+      "amount": -102.30,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Safeway",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_029",
+      "date": "2025-09-13",
+      "name": "THE CHEESECAKE FACTORY",
+      "amount": -85.20,
+      "category": ["Food and Drink", "Restaurants"],
+      "merchant_name": "Cheesecake Factory",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_028",
+      "date": "2025-09-13",
+      "name": "UBER TRIP 331A",
+      "amount": -28.50,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_027",
+      "date": "2025-09-12",
+      "name": "EXXONMOBIL 1122",
+      "amount": -48.20,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "ExxonMobil",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_026",
+      "date": "2025-09-11",
+      "name": "AMZN Mktp US*1X11",
+      "amount": -18.20,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_025",
+      "date": "2025-09-11",
+      "name": "HULU SUBSCRIPTION",
+      "amount": -7.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Hulu",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_024",
+      "date": "2025-09-10",
+      "name": "WHOLE FOODS MKT",
+      "amount": -65.40,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Whole Foods",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_023",
+      "date": "2025-09-10",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -6.45,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_022",
+      "date": "2025-09-09",
+      "name": "TACO BELL #221",
+      "amount": -14.20,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "Taco Bell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_021",
+      "date": "2025-09-08",
+      "name": "SHELL OIL 12345678",
+      "amount": -42.10,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_020",
+      "date": "2025-09-07",
+      "name": "BLUE BOTTLE COFFEE",
+      "amount": -7.25,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Blue Bottle Coffee",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_019",
+      "date": "2025-09-07",
+      "name": "SAFEWAY #2911",
+      "amount": -82.30,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Safeway",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_018",
+      "date": "2025-09-06",
+      "name": "UBER TRIP 5521",
+      "amount": -21.00,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_017",
+      "date": "2025-09-06",
+      "name": "SUSHI BOAT RESTAURANT",
+      "amount": -58.50,
+      "category": ["Food and Drink", "Restaurants"],
+      "merchant_name": "Sushi Boat",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_016",
+      "date": "2025-09-05",
+      "name": "AMZN Mktp US*8821",
+      "amount": -28.99,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_015",
+      "date": "2025-09-05",
+      "name": "STARBUCKS STORE 09221",
+      "amount": -5.95,
+      "category": ["Food and Drink", "Coffee Shop"],
+      "merchant_name": "Starbucks",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_014",
+      "date": "2025-09-04",
+      "name": "GYM MEMBERSHIP FITWORLD",
+      "amount": -45.00,
+      "category": ["Service", "Gym"],
+      "merchant_name": "FitWorld",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_013",
+      "date": "2025-09-03",
+      "name": "ADOBE CREATIVE CLOUD",
+      "amount": -54.99,
+      "category": ["Service", "Software"],
+      "merchant_name": "Adobe",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_012",
+      "date": "2025-09-02",
+      "name": "SPOTIFY USA",
+      "amount": -11.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Spotify",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_011",
+      "date": "2025-09-01",
+      "name": "LANDLORD RENT PAYMENT - SEPTEMBER",
+      "amount": -1850.00,
+      "category": ["Transfer", "Rent"],
+      "merchant_name": "Property Management",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_010",
+      "date": "2025-09-01",
+      "name": "RENTERS INSURANCE",
+      "amount": -15.50,
+      "category": ["Service", "Insurance"],
+      "merchant_name": "Lemonade",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_009",
+      "date": "2025-09-01",
+      "name": "UBER EATS ORDER",
+      "amount": -26.50,
+      "category": ["Food and Drink", "Delivery"],
+      "merchant_name": "Uber Eats",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_008",
+      "date": "2025-09-01",
+      "name": "7-ELEVEN 2211",
+      "amount": -12.45,
+      "category": ["Shops", "Convenience Store"],
+      "merchant_name": "7-Eleven",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_007",
+      "date": "2025-08-31",
+      "name": "UBER TRIP 442A",
+      "amount": -32.40,
+      "category": ["Travel", "Taxi"],
+      "merchant_name": "Uber",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_006",
+      "date": "2025-08-31",
+      "name": "TRADER JOE'S #521",
+      "amount": -94.12,
+      "category": ["Food and Drink", "Groceries"],
+      "merchant_name": "Trader Joe's",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_005",
+      "date": "2025-08-30",
+      "name": "THE ALCHEMIST BAR",
+      "amount": -76.50,
+      "category": ["Food and Drink", "Bar"],
+      "merchant_name": "The Alchemist",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_004",
+      "date": "2025-08-30",
+      "name": "SPOTIFY USA",
+      "amount": -11.99,
+      "category": ["Service", "Digital Subscription"],
+      "merchant_name": "Spotify",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_003",
+      "date": "2025-08-29",
+      "name": "SHELL OIL 9912",
+      "amount": -46.20,
+      "category": ["Travel", "Gas Stations"],
+      "merchant_name": "Shell",
+      "payment_channel": "in store"
+    },
+    {
+      "transaction_id": "tx_002",
+      "date": "2025-08-29",
+      "name": "AMZN Mktp US*4A11",
+      "amount": -42.15,
+      "category": ["Shops", "Online Shopping"],
+      "merchant_name": "Amazon",
+      "payment_channel": "online"
+    },
+    {
+      "transaction_id": "tx_001",
+      "date": "2025-08-28",
+      "name": "CHIPOTLE 2321",
+      "amount": -16.20,
+      "category": ["Food and Drink", "Fast Food"],
+      "merchant_name": "Chipotle",
+      "payment_channel": "in store"
+    },
+    {
+        "transaction_id": "tx_200",
+        "date": "2025-08-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_199",
+        "date": "2025-08-31",
+        "name": "UBER TRIP 442A",
+        "amount": -32.40,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_198",
+        "date": "2025-08-30",
+        "name": "TRADER JOE'S #521",
+        "amount": -94.12,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_197",
+        "date": "2025-08-29",
+        "name": "THE ALCHEMIST BAR",
+        "amount": -76.50,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Alchemist",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_196",
+        "date": "2025-08-29",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_195",
+        "date": "2025-08-28",
+        "name": "SHELL OIL 9912",
+        "amount": -46.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_194",
+        "date": "2025-08-27",
+        "name": "AMZN Mktp US*4A11",
+        "amount": -42.15,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_193",
+        "date": "2025-08-26",
+        "name": "CHIPOTLE 2321",
+        "amount": -16.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_192",
+        "date": "2025-08-25",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_191",
+        "date": "2025-08-24",
+        "name": "WHOLE FOODS MKT",
+        "amount": -134.50,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_190",
+        "date": "2025-08-23",
+        "name": "AMC THEATRES KIOSK",
+        "amount": -34.00,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "AMC Theatres",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_189",
+        "date": "2025-08-23",
+        "name": "IN-N-OUT BURGER #123",
+        "amount": -19.45,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "In-N-Out Burger",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_188",
+        "date": "2025-08-22",
+        "name": "UBER EATS ORDER",
+        "amount": -26.75,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_187",
+        "date": "2025-08-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -2.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_186",
+        "date": "2025-08-20",
+        "name": "JIFFY LUBE #112",
+        "amount": -89.99,
+        "category": ["Service", "Automotive"],
+        "merchant_name": "Jiffy Lube",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_185",
+        "date": "2025-08-19",
+        "name": "ATM WITHDRAWAL - CHASE",
+        "amount": -100.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Chase",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_184",
+        "date": "2025-08-18",
+        "name": "CVS PHARMACY #9921",
+        "amount": -18.40,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_183",
+        "date": "2025-08-17",
+        "name": "SAFEWAY #2911",
+        "amount": -76.80,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_182",
+        "date": "2025-08-17",
+        "name": "NETFLIX.COM",
+        "amount": -15.49,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Netflix",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_181",
+        "date": "2025-08-16",
+        "name": "UNIQLO USA",
+        "amount": -45.90,
+        "category": ["Shops", "Clothing"],
+        "merchant_name": "Uniqlo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_180",
+        "date": "2025-08-15",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -165.40,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_179",
+        "date": "2025-08-15",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_178",
+        "date": "2025-08-14",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_177",
+        "date": "2025-08-13",
+        "name": "AUTOZONE #4421",
+        "amount": -345.22,
+        "category": ["Service", "Automotive"],
+        "merchant_name": "AutoZone",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_176",
+        "date": "2025-08-12",
+        "name": "TARGET T-2311",
+        "amount": -88.15,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_175",
+        "date": "2025-08-11",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_174",
+        "date": "2025-08-10",
+        "name": "SAFEWAY #2911",
+        "amount": -112.55,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_173",
+        "date": "2025-08-09",
+        "name": "EXXONMOBIL 1122",
+        "amount": -54.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_172",
+        "date": "2025-08-08",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -45.00,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_171",
+        "date": "2025-08-07",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_170",
+        "date": "2025-08-06",
+        "name": "AMZN Mktp US*5B22",
+        "amount": -19.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_169",
+        "date": "2025-08-05",
+        "name": "CHEVRON 00291 CA",
+        "amount": -49.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Chevron",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_168",
+        "date": "2025-08-04",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_167",
+        "date": "2025-08-03",
+        "name": "TRADER JOE'S #521",
+        "amount": -67.89,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_166",
+        "date": "2025-08-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_165",
+        "date": "2025-08-02",
+        "name": "BARNES & NOBLE #22",
+        "amount": -18.50,
+        "category": ["Shops", "Books"],
+        "merchant_name": "Barnes & Noble",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_164",
+        "date": "2025-08-01",
+        "name": "LANDLORD RENT PAYMENT - AUGUST",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_163",
+        "date": "2025-08-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_162",
+        "date": "2025-07-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_161",
+        "date": "2025-07-30",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_160",
+        "date": "2025-07-29",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_159",
+        "date": "2025-07-29",
+        "name": "UBER EATS ORDER",
+        "amount": -32.45,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_158",
+        "date": "2025-07-28",
+        "name": "7-ELEVEN 2211",
+        "amount": -12.40,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_157",
+        "date": "2025-07-27",
+        "name": "SAFEWAY #2911",
+        "amount": -102.30,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_156",
+        "date": "2025-07-26",
+        "name": "THE IRISH PUB DOWNTOWN",
+        "amount": -55.00,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Irish Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_155",
+        "date": "2025-07-26",
+        "name": "UBER TRIP 221A",
+        "amount": -18.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_154",
+        "date": "2025-07-25",
+        "name": "SHELL OIL 12345678",
+        "amount": -48.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_153",
+        "date": "2025-07-24",
+        "name": "AMZN Mktp US*9C12",
+        "amount": -24.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_152",
+        "date": "2025-07-23",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_151",
+        "date": "2025-07-22",
+        "name": "CVS PHARMACY #9921",
+        "amount": -15.67,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_150",
+        "date": "2025-07-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_149",
+        "date": "2025-07-20",
+        "name": "TRADER JOE'S #521",
+        "amount": -82.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_148",
+        "date": "2025-07-19",
+        "name": "SUSHIRRITO DOWNTOWN",
+        "amount": -22.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Sushirrito",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_147",
+        "date": "2025-07-18",
+        "name": "ATM WITHDRAWAL - WELLS FARGO",
+        "amount": -200.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Wells Fargo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_146",
+        "date": "2025-07-17",
+        "name": "NETFLIX.COM",
+        "amount": -15.49,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Netflix",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_145",
+        "date": "2025-07-16",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -188.40,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_144",
+        "date": "2025-07-16",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_143",
+        "date": "2025-07-15",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_142",
+        "date": "2025-07-14",
+        "name": "LYFT RIDE *224",
+        "amount": -16.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Lyft",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_141",
+        "date": "2025-07-13",
+        "name": "WHOLE FOODS MKT",
+        "amount": -95.60,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_140",
+        "date": "2025-07-12",
+        "name": "MCDONALD'S #1122",
+        "amount": -14.55,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "McDonald's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_139",
+        "date": "2025-07-11",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_138",
+        "date": "2025-07-10",
+        "name": "Shell Oil 9999",
+        "amount": -51.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_137",
+        "date": "2025-07-09",
+        "name": "CHIPOTLE 2321",
+        "amount": -15.40,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_136",
+        "date": "2025-07-08",
+        "name": "BEST BUY #112",
+        "amount": -34.99,
+        "category": ["Shops", "Electronics"],
+        "merchant_name": "Best Buy",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_135",
+        "date": "2025-07-07",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_134",
+        "date": "2025-07-06",
+        "name": "AMZN Mktp US*3Z11",
+        "amount": -28.90,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_133",
+        "date": "2025-07-06",
+        "name": "SAFEWAY #2911",
+        "amount": -145.22,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_132",
+        "date": "2025-07-05",
+        "name": "BEVMO #221",
+        "amount": -65.40,
+        "category": ["Food and Drink", "Liquor Store"],
+        "merchant_name": "BevMo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_131",
+        "date": "2025-07-05",
+        "name": "COSTCO WHOLESALE #122",
+        "amount": -210.50,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Costco",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_130",
+        "date": "2025-07-04",
+        "name": "UBER TRIP 772A",
+        "amount": -45.00,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_129",
+        "date": "2025-07-04",
+        "name": "FIREWORKS STAND 22",
+        "amount": -85.00,
+        "category": ["Entertainment", "Holiday"],
+        "merchant_name": "Fireworks Stand",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_128",
+        "date": "2025-07-03",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_127",
+        "date": "2025-07-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_126",
+        "date": "2025-07-02",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_125",
+        "date": "2025-07-02",
+        "name": "EXXONMOBIL 1122",
+        "amount": -56.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_124",
+        "date": "2025-07-01",
+        "name": "LANDLORD RENT PAYMENT - JULY",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_123",
+        "date": "2025-07-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_122",
+        "date": "2025-06-30",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_121",
+        "date": "2025-06-29",
+        "name": "UBER EATS ORDER",
+        "amount": -28.90,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_120",
+        "date": "2025-06-29",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_119",
+        "date": "2025-06-28",
+        "name": "TARGET T-2311",
+        "amount": -65.40,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_118",
+        "date": "2025-06-28",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -45.20,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_117",
+        "date": "2025-06-27",
+        "name": "UBER TRIP 111B",
+        "amount": -21.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_116",
+        "date": "2025-06-27",
+        "name": "WHOLE FOODS MKT",
+        "amount": -78.12,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_115",
+        "date": "2025-06-26",
+        "name": "CHEVRON 00291 CA",
+        "amount": -52.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Chevron",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_114",
+        "date": "2025-06-26",
+        "name": "DOORDASH*PIZZA",
+        "amount": -38.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "DoorDash",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_113",
+        "date": "2025-06-25",
+        "name": "AMZN Mktp US*1X11",
+        "amount": -16.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_112",
+        "date": "2025-06-25",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_111",
+        "date": "2025-06-24",
+        "name": "CVS PHARMACY #9921",
+        "amount": -12.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_110",
+        "date": "2025-06-23",
+        "name": "DUNKIN DONUTS 221",
+        "amount": -8.25,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Dunkin Donuts",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_109",
+        "date": "2025-06-23",
+        "name": "MOVIE TICKETS.COM",
+        "amount": -32.00,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "Fandango",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_108",
+        "date": "2025-06-22",
+        "name": "POPEYES CHICKEN",
+        "amount": -14.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Popeyes",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_107",
+        "date": "2025-06-22",
+        "name": "TRADER JOE'S #521",
+        "amount": -86.55,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_106",
+        "date": "2025-06-21",
+        "name": "SHELL OIL 12345678",
+        "amount": -44.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_105",
+        "date": "2025-06-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_104",
+        "date": "2025-06-20",
+        "name": "UBER EATS ORDER",
+        "amount": -24.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_103",
+        "date": "2025-06-20",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_102",
+        "date": "2025-06-19",
+        "name": "ATM WITHDRAWAL - CHASE",
+        "amount": -60.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Chase",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_101",
+        "date": "2025-06-18",
+        "name": "OFFICE MAX #221",
+        "amount": -12.45,
+        "category": ["Shops", "Office Supplies"],
+        "merchant_name": "Office Max",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_300",
+        "date": "2025-06-17",
+        "name": "CHIPOTLE 2321",
+        "amount": -14.80,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_299",
+        "date": "2025-06-16",
+        "name": "UBER TRIP 882B",
+        "amount": -22.15,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_298",
+        "date": "2025-06-15",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -145.22,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_297",
+        "date": "2025-06-15",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_296",
+        "date": "2025-06-14",
+        "name": "TARGET T-2311",
+        "amount": -134.50,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_295",
+        "date": "2025-06-14",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_294",
+        "date": "2025-06-13",
+        "name": "THE ALCHEMIST BAR",
+        "amount": -65.00,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Alchemist",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_293",
+        "date": "2025-06-13",
+        "name": "UBER TRIP 992A",
+        "amount": -18.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_292",
+        "date": "2025-06-12",
+        "name": "TRADER JOE'S #521",
+        "amount": -78.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_291",
+        "date": "2025-06-11",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_290",
+        "date": "2025-06-10",
+        "name": "SHELL OIL 12345678",
+        "amount": -48.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_289",
+        "date": "2025-06-09",
+        "name": "AMZN Mktp US*2X99",
+        "amount": -34.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_288",
+        "date": "2025-06-08",
+        "name": "WHOLE FOODS MKT",
+        "amount": -95.60,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_287",
+        "date": "2025-06-08",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_286",
+        "date": "2025-06-07",
+        "name": "UNIQLO USA",
+        "amount": -59.90,
+        "category": ["Shops", "Clothing"],
+        "merchant_name": "Uniqlo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_285",
+        "date": "2025-06-06",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -42.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_284",
+        "date": "2025-06-05",
+        "name": "UBER EATS ORDER",
+        "amount": -26.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_283",
+        "date": "2025-06-04",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_282",
+        "date": "2025-06-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_281",
+        "date": "2025-06-02",
+        "name": "CVS PHARMACY #9921",
+        "amount": -15.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_280",
+        "date": "2025-06-01",
+        "name": "LANDLORD RENT PAYMENT - JUNE",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_279",
+        "date": "2025-06-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_278",
+        "date": "2025-05-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_277",
+        "date": "2025-05-31",
+        "name": "UBER TRIP 551B",
+        "amount": -32.40,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_276",
+        "date": "2025-05-30",
+        "name": "TRADER JOE'S #521",
+        "amount": -98.20,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_275",
+        "date": "2025-05-29",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_274",
+        "date": "2025-05-29",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_273",
+        "date": "2025-05-28",
+        "name": "SHELL OIL 1122 MEMORIAL",
+        "amount": -55.40,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_272",
+        "date": "2025-05-27",
+        "name": "ROAD TRIP DINER",
+        "amount": -45.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Road Trip Diner",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_271",
+        "date": "2025-05-26",
+        "name": "EXXONMOBIL HIGHWAY 1",
+        "amount": -48.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_270",
+        "date": "2025-05-26",
+        "name": "AIRBNB RESERVATION",
+        "amount": -450.00,
+        "category": ["Travel", "Lodging"],
+        "merchant_name": "Airbnb",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_269",
+        "date": "2025-05-25",
+        "name": "7-ELEVEN SNACKS",
+        "amount": -22.45,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_268",
+        "date": "2025-05-24",
+        "name": "COSTCO WHOLESALE #122",
+        "amount": -185.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Costco",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_267",
+        "date": "2025-05-23",
+        "name": "AMZN Mktp US*CAMPING",
+        "amount": -65.99,
+        "category": ["Shops", "Sporting Goods"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_266",
+        "date": "2025-05-22",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_265",
+        "date": "2025-05-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -2.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_264",
+        "date": "2025-05-20",
+        "name": "ATM WITHDRAWAL - CHASE",
+        "amount": -100.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Chase",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_263",
+        "date": "2025-05-19",
+        "name": "CHIPOTLE 2321",
+        "amount": -15.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_262",
+        "date": "2025-05-18",
+        "name": "WHOLE FOODS MKT",
+        "amount": -112.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_261",
+        "date": "2025-05-17",
+        "name": "NETFLIX.COM",
+        "amount": -15.49,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Netflix",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_260",
+        "date": "2025-05-17",
+        "name": "THE IRISH PUB DOWNTOWN",
+        "amount": -55.40,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Irish Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_259",
+        "date": "2025-05-16",
+        "name": "UBER TRIP 221A",
+        "amount": -24.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_258",
+        "date": "2025-05-15",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -134.20,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_257",
+        "date": "2025-05-15",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_256",
+        "date": "2025-05-14",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_255",
+        "date": "2025-05-13",
+        "name": "SHELL OIL 12345678",
+        "amount": -44.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_254",
+        "date": "2025-05-12",
+        "name": "CVS PHARMACY #9921",
+        "amount": -22.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_253",
+        "date": "2025-05-11",
+        "name": "1-800-FLOWERS.COM",
+        "amount": -89.99,
+        "category": ["Shops", "Gifts"],
+        "merchant_name": "1-800-Flowers",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_252",
+        "date": "2025-05-11",
+        "name": "MOTHERS DAY BRUNCH",
+        "amount": -125.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Bistro Cafe",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_251",
+        "date": "2025-05-10",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_250",
+        "date": "2025-05-10",
+        "name": "SAFEWAY #2911",
+        "amount": -88.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_249",
+        "date": "2025-05-09",
+        "name": "POPEYES CHICKEN",
+        "amount": -16.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Popeyes",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_248",
+        "date": "2025-05-08",
+        "name": "AMZN Mktp US*1X99",
+        "amount": -18.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_247",
+        "date": "2025-05-08",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_246",
+        "date": "2025-05-07",
+        "name": "UBER EATS ORDER",
+        "amount": -28.45,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_245",
+        "date": "2025-05-06",
+        "name": "CHEVRON 00291 CA",
+        "amount": -48.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Chevron",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_244",
+        "date": "2025-05-05",
+        "name": "BEST BUY #112",
+        "amount": -42.99,
+        "category": ["Shops", "Electronics"],
+        "merchant_name": "Best Buy",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_243",
+        "date": "2025-05-04",
+        "name": "TRADER JOE'S #521",
+        "amount": -76.55,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_242",
+        "date": "2025-05-04",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_241",
+        "date": "2025-05-04",
+        "name": "FITWORLD INITIATION FEE",
+        "amount": -99.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_240",
+        "date": "2025-05-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_239",
+        "date": "2025-05-03",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_238",
+        "date": "2025-05-02",
+        "name": "DUNKIN DONUTS 221",
+        "amount": -8.75,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Dunkin Donuts",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_237",
+        "date": "2025-05-02",
+        "name": "OFFICE MAX #221",
+        "amount": -22.40,
+        "category": ["Shops", "Office Supplies"],
+        "merchant_name": "Office Max",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_236",
+        "date": "2025-05-01",
+        "name": "LANDLORD RENT PAYMENT - MAY",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_235",
+        "date": "2025-05-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_234",
+        "date": "2025-05-01",
+        "name": "MOVIE TICKETS.COM",
+        "amount": -32.00,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "Fandango",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_233",
+        "date": "2025-05-01",
+        "name": "AMC THEATRES CONCESSIONS",
+        "amount": -24.50,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "AMC Theatres",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_232",
+        "date": "2025-04-30",
+        "name": "UBER TRIP 331C",
+        "amount": -18.25,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_231",
+        "date": "2025-04-30",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_230",
+        "date": "2025-04-29",
+        "name": "WHOLE FOODS MKT",
+        "amount": -67.89,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_229",
+        "date": "2025-04-29",
+        "name": "AMZN Mktp US*3X11",
+        "amount": -14.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_228",
+        "date": "2025-04-28",
+        "name": "SHELL OIL 12345678",
+        "amount": -42.10,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_227",
+        "date": "2025-04-28",
+        "name": "DOORDASH*BURGER",
+        "amount": -34.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "DoorDash",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_226",
+        "date": "2025-04-27",
+        "name": "TARGET T-2311",
+        "amount": -89.45,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_225",
+        "date": "2025-04-27",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_224",
+        "date": "2025-04-26",
+        "name": "THE CHEESECAKE FACTORY",
+        "amount": -85.20,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Cheesecake Factory",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_223",
+        "date": "2025-04-26",
+        "name": "UBER TRIP 441A",
+        "amount": -26.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_222",
+        "date": "2025-04-25",
+        "name": "CVS PHARMACY #9921",
+        "amount": -14.25,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_221",
+        "date": "2025-04-25",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_220",
+        "date": "2025-04-24",
+        "name": "SAFEWAY #2911",
+        "amount": -102.30,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_219",
+        "date": "2025-04-24",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_218",
+        "date": "2025-04-23",
+        "name": "ATM WITHDRAWAL - WELLS FARGO",
+        "amount": -80.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Wells Fargo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_217",
+        "date": "2025-04-23",
+        "name": "MCDONALD'S #1122",
+        "amount": -12.45,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "McDonald's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_216",
+        "date": "2025-04-22",
+        "name": "EXXONMOBIL 1122",
+        "amount": -51.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_215",
+        "date": "2025-04-21",
+        "name": "UBER EATS ORDER",
+        "amount": -22.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_214",
+        "date": "2025-04-21",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_213",
+        "date": "2025-04-20",
+        "name": "TRADER JOE'S #521",
+        "amount": -65.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_212",
+        "date": "2025-04-19",
+        "name": "BARNES & NOBLE #22",
+        "amount": -24.95,
+        "category": ["Shops", "Books"],
+        "merchant_name": "Barnes & Noble",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_211",
+        "date": "2025-04-19",
+        "name": "BLUE BOTTLE COFFEE",
+        "amount": -7.25,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Blue Bottle Coffee",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_210",
+        "date": "2025-04-18",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -38.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_209",
+        "date": "2025-04-18",
+        "name": "LYFT RIDE *112",
+        "amount": -14.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Lyft",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_208",
+        "date": "2025-04-17",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -125.40,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_207",
+        "date": "2025-04-17",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_206",
+        "date": "2025-04-16",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_205",
+        "date": "2025-04-15",
+        "name": "WHOLE FOODS MKT",
+        "amount": -89.12,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_204",
+        "date": "2025-04-14",
+        "name": "SHELL OIL 9999",
+        "amount": -48.55,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_203",
+        "date": "2025-04-13",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_202",
+        "date": "2025-04-12",
+        "name": "AMZN Mktp US*9X11",
+        "amount": -28.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_201",
+        "date": "2025-04-12",
+        "name": "CHIPOTLE 2321",
+        "amount": -14.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_400",
+        "date": "2025-04-11",
+        "name": "SHELL OIL 9912",
+        "amount": -44.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_399",
+        "date": "2025-04-10",
+        "name": "TRADER JOE'S #521",
+        "amount": -89.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_398",
+        "date": "2025-04-10",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_397",
+        "date": "2025-04-09",
+        "name": "IRS US TREASURY PAYMENT",
+        "amount": -450.00,
+        "category": ["Transfer", "Tax"],
+        "merchant_name": "IRS",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_396",
+        "date": "2025-04-09",
+        "name": "TURBOTAX *INTUIT",
+        "amount": -89.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "TurboTax",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_395",
+        "date": "2025-04-08",
+        "name": "CHIPOTLE 2321",
+        "amount": -15.80,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_394",
+        "date": "2025-04-08",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_393",
+        "date": "2025-04-07",
+        "name": "UBER TRIP 991A",
+        "amount": -22.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_392",
+        "date": "2025-04-06",
+        "name": "TARGET T-2311",
+        "amount": -112.30,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_391",
+        "date": "2025-04-06",
+        "name": "BLUE BOTTLE COFFEE",
+        "amount": -12.50,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Blue Bottle Coffee",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_390",
+        "date": "2025-04-05",
+        "name": "AMZN Mktp US*2B99",
+        "amount": -24.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_389",
+        "date": "2025-04-04",
+        "name": "THE ALCHEMIST BAR",
+        "amount": -55.00,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Alchemist",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_388",
+        "date": "2025-04-04",
+        "name": "UBER TRIP 221B",
+        "amount": -18.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_387",
+        "date": "2025-04-03",
+        "name": "SAFEWAY #2911",
+        "amount": -78.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_386",
+        "date": "2025-04-03",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_385",
+        "date": "2025-04-02",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_384",
+        "date": "2025-04-02",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_383",
+        "date": "2025-04-01",
+        "name": "LANDLORD RENT PAYMENT - APRIL",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_382",
+        "date": "2025-04-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_381",
+        "date": "2025-03-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_380",
+        "date": "2025-03-31",
+        "name": "UBER EATS ORDER",
+        "amount": -28.90,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_379",
+        "date": "2025-03-30",
+        "name": "WHOLE FOODS MKT",
+        "amount": -102.50,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_378",
+        "date": "2025-03-29",
+        "name": "SPORTS BAR DOWNTOWN",
+        "amount": -85.20,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Sports Bar",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_377",
+        "date": "2025-03-29",
+        "name": "BUFFALO WILD WINGS",
+        "amount": -45.60,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Buffalo Wild Wings",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_376",
+        "date": "2025-03-28",
+        "name": "SHELL OIL 12345678",
+        "amount": -48.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_375",
+        "date": "2025-03-28",
+        "name": "DraftKings DEPOSIT",
+        "amount": -50.00,
+        "category": ["Entertainment", "Gambling"],
+        "merchant_name": "DraftKings",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_374",
+        "date": "2025-03-27",
+        "name": "AMZN Mktp US*3X99",
+        "amount": -18.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_373",
+        "date": "2025-03-27",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_372",
+        "date": "2025-03-26",
+        "name": "CVS PHARMACY #9921",
+        "amount": -14.25,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_371",
+        "date": "2025-03-25",
+        "name": "POPEYES CHICKEN",
+        "amount": -13.50,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Popeyes",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_370",
+        "date": "2025-03-24",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_369",
+        "date": "2025-03-23",
+        "name": "TRADER JOE'S #521",
+        "amount": -76.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_368",
+        "date": "2025-03-22",
+        "name": "THE IRISH PUB DOWNTOWN",
+        "amount": -65.40,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Irish Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_367",
+        "date": "2025-03-22",
+        "name": "UBER TRIP 331A",
+        "amount": -24.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_366",
+        "date": "2025-03-21",
+        "name": "AMC THEATRES KIOSK",
+        "amount": -28.50,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "AMC Theatres",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_365",
+        "date": "2025-03-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_364",
+        "date": "2025-03-20",
+        "name": "EXXONMOBIL 1122",
+        "amount": -51.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_363",
+        "date": "2025-03-19",
+        "name": "UBER EATS ORDER",
+        "amount": -26.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_362",
+        "date": "2025-03-18",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_361",
+        "date": "2025-03-17",
+        "name": "DUBLINERS PUB ST PATTYS",
+        "amount": -92.50,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "Dubliners Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_360",
+        "date": "2025-03-17",
+        "name": "UBER TRIP STPATTYS",
+        "amount": -45.00,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_359",
+        "date": "2025-03-16",
+        "name": "SAFEWAY #2911",
+        "amount": -112.30,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_358",
+        "date": "2025-03-16",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -188.20,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_357",
+        "date": "2025-03-15",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_356",
+        "date": "2025-03-15",
+        "name": "OFFICE MAX #221",
+        "amount": -12.45,
+        "category": ["Shops", "Office Supplies"],
+        "merchant_name": "Office Max",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_355",
+        "date": "2025-03-14",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -38.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_354",
+        "date": "2025-03-13",
+        "name": "SHELL OIL 9999",
+        "amount": -44.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_353",
+        "date": "2025-03-12",
+        "name": "AMZN Mktp US*1X11",
+        "amount": -16.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_352",
+        "date": "2025-03-11",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_351",
+        "date": "2025-03-10",
+        "name": "CITY DENTAL GROUP COPAY",
+        "amount": -75.00,
+        "category": ["Service", "Healthcare"],
+        "merchant_name": "City Dental",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_350",
+        "date": "2025-03-10",
+        "name": "CVS PHARMACY #9921",
+        "amount": -18.40,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_349",
+        "date": "2025-03-09",
+        "name": "WHOLE FOODS MKT",
+        "amount": -89.12,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_348",
+        "date": "2025-03-08",
+        "name": "SUSHIRRITO DOWNTOWN",
+        "amount": -21.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Sushirrito",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_347",
+        "date": "2025-03-07",
+        "name": "UBER TRIP 5521",
+        "amount": -16.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_346",
+        "date": "2025-03-06",
+        "name": "CHEVRON 00291 CA",
+        "amount": -46.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Chevron",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_345",
+        "date": "2025-03-05",
+        "name": "ATM WITHDRAWAL - CHASE",
+        "amount": -60.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Chase",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_344",
+        "date": "2025-03-04",
+        "name": "DOORDASH*PIZZA",
+        "amount": -32.40,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "DoorDash",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_343",
+        "date": "2025-03-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_342",
+        "date": "2025-03-03",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_341",
+        "date": "2025-03-02",
+        "name": "TRADER JOE'S #521",
+        "amount": -65.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_340",
+        "date": "2025-03-01",
+        "name": "LANDLORD RENT PAYMENT - MARCH",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_339",
+        "date": "2025-03-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_338",
+        "date": "2025-02-28",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_337",
+        "date": "2025-02-28",
+        "name": "7-ELEVEN 2211",
+        "amount": -8.45,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_336",
+        "date": "2025-02-27",
+        "name": "SAFEWAY #2911",
+        "amount": -98.20,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_335",
+        "date": "2025-02-26",
+        "name": "UBER TRIP 441B",
+        "amount": -21.00,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_334",
+        "date": "2025-02-26",
+        "name": "BARNES & NOBLE #22",
+        "amount": -34.95,
+        "category": ["Shops", "Books"],
+        "merchant_name": "Barnes & Noble",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_333",
+        "date": "2025-02-25",
+        "name": "SHELL OIL 12345678",
+        "amount": -42.10,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_332",
+        "date": "2025-02-25",
+        "name": "CHIPOTLE 2321",
+        "amount": -14.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_331",
+        "date": "2025-02-24",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_330",
+        "date": "2025-02-24",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_329",
+        "date": "2025-02-23",
+        "name": "AMZN Mktp US*8A21",
+        "amount": -28.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_328",
+        "date": "2025-02-23",
+        "name": "WHOLE FOODS MKT",
+        "amount": -115.60,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_327",
+        "date": "2025-02-22",
+        "name": "MCDONALD'S #1122",
+        "amount": -11.50,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "McDonald's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_326",
+        "date": "2025-02-22",
+        "name": "UBER EATS ORDER",
+        "amount": -24.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_325",
+        "date": "2025-02-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_324",
+        "date": "2025-02-21",
+        "name": "CVS PHARMACY #9921",
+        "amount": -22.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_323",
+        "date": "2025-02-20",
+        "name": "EXXONMOBIL 1122",
+        "amount": -48.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_322",
+        "date": "2025-02-20",
+        "name": "DUNKIN DONUTS 221",
+        "amount": -8.75,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Dunkin Donuts",
+        "payment_channel": "in store"
+      }, {
+        "transaction_id": "tx_320",
+        "date": "2025-02-18",
+        "name": "UBER TRIP 221B",
+        "amount": -18.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_319",
+        "date": "2025-02-18",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_318",
+        "date": "2025-02-17",
+        "name": "SHELL OIL 9912",
+        "amount": -44.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_317",
+        "date": "2025-02-17",
+        "name": "7-ELEVEN 2211",
+        "amount": -12.45,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_316",
+        "date": "2025-02-16",
+        "name": "AMC THEATRES KIOSK",
+        "amount": -32.50,
+        "category": ["Entertainment", "Movies"],
+        "merchant_name": "AMC Theatres",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_315",
+        "date": "2025-02-16",
+        "name": "CHIPOTLE 2321",
+        "amount": -14.80,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_314",
+        "date": "2025-02-15",
+        "name": "SAFEWAY #2911",
+        "amount": -89.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_313",
+        "date": "2025-02-15",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_312",
+        "date": "2025-02-14",
+        "name": "LUMIERE BISTRO - VALENTINE",
+        "amount": -245.00,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Lumiere Bistro",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_311",
+        "date": "2025-02-14",
+        "name": "1-800-FLOWERS.COM",
+        "amount": -75.00,
+        "category": ["Shops", "Gifts"],
+        "merchant_name": "1-800-Flowers",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_310",
+        "date": "2025-02-14",
+        "name": "UBER TRIP LUX",
+        "amount": -45.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_309",
+        "date": "2025-02-13",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -198.40,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_308",
+        "date": "2025-02-13",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_307",
+        "date": "2025-02-12",
+        "name": "WHOLE FOODS MKT",
+        "amount": -45.60,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_306",
+        "date": "2025-02-12",
+        "name": "AMZN Mktp US*VALENTINE",
+        "amount": -45.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_305",
+        "date": "2025-02-11",
+        "name": "CVS PHARMACY #9921",
+        "amount": -12.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_304",
+        "date": "2025-02-10",
+        "name": "POPEYES CHICKEN",
+        "amount": -13.50,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Popeyes",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_303",
+        "date": "2025-02-09",
+        "name": "DOMINO'S PIZZA SUPERBOWL",
+        "amount": -58.90,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Domino's",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_302",
+        "date": "2025-02-09",
+        "name": "BEVMO #221",
+        "amount": -85.40,
+        "category": ["Food and Drink", "Liquor Store"],
+        "merchant_name": "BevMo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_301",
+        "date": "2025-02-08",
+        "name": "TARGET T-2311",
+        "amount": -67.80,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_300",
+        "date": "2025-02-07",
+        "name": "LOCAL PUB & GRILL",
+        "amount": -42.50,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Local Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_299",
+        "date": "2025-02-07",
+        "name": "UBER TRIP 112A",
+        "amount": -16.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_298",
+        "date": "2025-02-06",
+        "name": "SHELL OIL 12345678",
+        "amount": -41.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_297",
+        "date": "2025-02-05",
+        "name": "ATM WITHDRAWAL - CHASE",
+        "amount": -80.00,
+        "category": ["Transfer", "Withdrawal", "ATM"],
+        "merchant_name": "Chase",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_296",
+        "date": "2025-02-04",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_295",
+        "date": "2025-02-03",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_294",
+        "date": "2025-02-03",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_293",
+        "date": "2025-02-02",
+        "name": "TRADER JOE'S #521",
+        "amount": -82.30,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_292",
+        "date": "2025-02-01",
+        "name": "LANDLORD RENT PAYMENT - FEB",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_291",
+        "date": "2025-02-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_290",
+        "date": "2025-01-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_289",
+        "date": "2025-01-31",
+        "name": "UBER EATS ORDER",
+        "amount": -26.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_288",
+        "date": "2025-01-30",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_287",
+        "date": "2025-01-29",
+        "name": "AMZN Mktp US*9X11",
+        "amount": -18.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_286",
+        "date": "2025-01-28",
+        "name": "SHELL OIL 9999",
+        "amount": -43.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_285",
+        "date": "2025-01-28",
+        "name": "7-ELEVEN 2211",
+        "amount": -8.45,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_284",
+        "date": "2025-01-27",
+        "name": "POPEYES CHICKEN",
+        "amount": -13.50,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Popeyes",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_283",
+        "date": "2025-01-26",
+        "name": "WHOLE FOODS MKT",
+        "amount": -145.60,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_282",
+        "date": "2025-01-26",
+        "name": "THE VITAMIN SHOPPE",
+        "amount": -55.40,
+        "category": ["Shops", "Health"],
+        "merchant_name": "Vitamin Shoppe",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_281",
+        "date": "2025-01-25",
+        "name": "BARNES & NOBLE #22",
+        "amount": -45.00,
+        "category": ["Shops", "Books"],
+        "merchant_name": "Barnes & Noble",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_280",
+        "date": "2025-01-25",
+        "name": "BLUE BOTTLE COFFEE",
+        "amount": -7.25,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Blue Bottle Coffee",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_279",
+        "date": "2025-01-24",
+        "name": "UBER TRIP 331A",
+        "amount": -22.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_278",
+        "date": "2025-01-23",
+        "name": "SAFEWAY #2911",
+        "amount": -78.20,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_277",
+        "date": "2025-01-23",
+        "name": "MCDONALD'S #1122",
+        "amount": -11.50,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "McDonald's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_276",
+        "date": "2025-01-22",
+        "name": "EXXONMOBIL 1122",
+        "amount": -49.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "ExxonMobil",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_275",
+        "date": "2025-01-21",
+        "name": "APPLE.COM/BILL",
+        "amount": -9.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Apple",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_274",
+        "date": "2025-01-21",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_273",
+        "date": "2025-01-20",
+        "name": "COMCAST INTERNET AUTOPAY",
+        "amount": -79.99,
+        "category": ["Service", "Internet"],
+        "merchant_name": "Comcast",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_272",
+        "date": "2025-01-19",
+        "name": "TRADER JOE'S #521",
+        "amount": -92.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_271",
+        "date": "2025-01-18",
+        "name": "THE IRISH PUB DOWNTOWN",
+        "amount": -45.00,
+        "category": ["Food and Drink", "Bar"],
+        "merchant_name": "The Irish Pub",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_270",
+        "date": "2025-01-17",
+        "name": "UBER TRIP 5521",
+        "amount": -16.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_269",
+        "date": "2025-01-16",
+        "name": "PG&E UTILITIES PAYMENT",
+        "amount": -210.50,
+        "category": ["Service", "Utilities"],
+        "merchant_name": "PG&E",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_268",
+        "date": "2025-01-15",
+        "name": "HULU SUBSCRIPTION",
+        "amount": -7.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Hulu",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_267",
+        "date": "2025-01-15",
+        "name": "OFFICE MAX #221",
+        "amount": -32.40,
+        "category": ["Shops", "Office Supplies"],
+        "merchant_name": "Office Max",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_266",
+        "date": "2025-01-14",
+        "name": "CHIPOTLE 2321",
+        "amount": -14.20,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_265",
+        "date": "2025-01-13",
+        "name": "SHELL OIL 12345678",
+        "amount": -44.50,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_264",
+        "date": "2025-01-13",
+        "name": "CVS PHARMACY #9921",
+        "amount": -14.20,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_263",
+        "date": "2025-01-12",
+        "name": "AMZN Mktp US*1X11",
+        "amount": -22.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_262",
+        "date": "2025-01-11",
+        "name": "WHOLE FOODS MKT",
+        "amount": -112.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_261",
+        "date": "2025-01-10",
+        "name": "DOORDASH*SALAD",
+        "amount": -28.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "DoorDash",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_260",
+        "date": "2025-01-10",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_259",
+        "date": "2025-01-09",
+        "name": "GYM MEMBERSHIP FITWORLD",
+        "amount": -45.00,
+        "category": ["Service", "Gym"],
+        "merchant_name": "FitWorld",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_258",
+        "date": "2025-01-09",
+        "name": "THE VITAMIN SHOPPE",
+        "amount": -34.50,
+        "category": ["Shops", "Health"],
+        "merchant_name": "Vitamin Shoppe",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_257",
+        "date": "2025-01-08",
+        "name": "CVS PHARMACY #9921",
+        "amount": -15.20,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "CVS",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_256",
+        "date": "2025-01-07",
+        "name": "CHEVRON 00291 CA",
+        "amount": -46.00,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Chevron",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_255",
+        "date": "2025-01-07",
+        "name": "DUNKIN DONUTS 221",
+        "amount": -8.75,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Dunkin Donuts",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_254",
+        "date": "2025-01-06",
+        "name": "WHOLE FOODS MKT",
+        "amount": -67.89,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Whole Foods",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_253",
+        "date": "2025-01-05",
+        "name": "ADOBE CREATIVE CLOUD",
+        "amount": -54.99,
+        "category": ["Service", "Software"],
+        "merchant_name": "Adobe",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_252",
+        "date": "2025-01-05",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_251",
+        "date": "2025-01-04",
+        "name": "TRADER JOE'S #521",
+        "amount": -78.40,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_250",
+        "date": "2025-01-04",
+        "name": "UBER TRIP 221A",
+        "amount": -18.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_249",
+        "date": "2025-01-03",
+        "name": "BEST BUY #112",
+        "amount": -24.99,
+        "category": ["Shops", "Electronics"],
+        "merchant_name": "Best Buy",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_248",
+        "date": "2025-01-03",
+        "name": "CHIPOTLE 2321",
+        "amount": -15.40,
+        "category": ["Food and Drink", "Fast Food"],
+        "merchant_name": "Chipotle",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_247",
+        "date": "2025-01-02",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_246",
+        "date": "2025-01-02",
+        "name": "TARGET T-2311",
+        "amount": -45.60,
+        "category": ["Shops", "Department Store"],
+        "merchant_name": "Target",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_245",
+        "date": "2025-01-01",
+        "name": "LANDLORD RENT PAYMENT - JAN",
+        "amount": -1850.00,
+        "category": ["Transfer", "Rent"],
+        "merchant_name": "Property Management",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_244",
+        "date": "2025-01-01",
+        "name": "RENTERS INSURANCE",
+        "amount": -15.50,
+        "category": ["Service", "Insurance"],
+        "merchant_name": "Lemonade",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_243",
+        "date": "2025-01-01",
+        "name": "DOORDASH*HANGOVER",
+        "amount": -45.50,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "DoorDash",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_242",
+        "date": "2025-01-01",
+        "name": "UBER TRIP NYE HOME",
+        "amount": -65.00,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_241",
+        "date": "2025-01-01",
+        "name": "7-ELEVEN 2211",
+        "amount": -14.20,
+        "category": ["Shops", "Convenience Store"],
+        "merchant_name": "7-Eleven",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_240",
+        "date": "2025-01-01",
+        "name": "WALGREENS #2211",
+        "amount": -22.45,
+        "category": ["Shops", "Pharmacy"],
+        "merchant_name": "Walgreens",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_239",
+        "date": "2025-01-01",
+        "name": "SPOTIFY USA",
+        "amount": -11.99,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Spotify",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_238",
+        "date": "2025-01-01",
+        "name": "NETFLIX.COM",
+        "amount": -15.49,
+        "category": ["Service", "Digital Subscription"],
+        "merchant_name": "Netflix",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_237",
+        "date": "2024-12-31",
+        "name": "TECH SOLUTIONS INC PAYROLL",
+        "amount": 4250.00,
+        "category": ["Transfer", "Payroll"],
+        "merchant_name": "Tech Solutions Inc",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_236",
+        "date": "2024-12-31",
+        "name": "UBER TRIP NYE OUT",
+        "amount": -42.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_235",
+        "date": "2024-12-31",
+        "name": "NYE PARTY TICKET",
+        "amount": -120.00,
+        "category": ["Entertainment", "Party"],
+        "merchant_name": "Eventbrite",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_234",
+        "date": "2024-12-31",
+        "name": "BEVMO #221",
+        "amount": -145.60,
+        "category": ["Food and Drink", "Liquor Store"],
+        "merchant_name": "BevMo",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_233",
+        "date": "2024-12-30",
+        "name": "TRADER JOE'S #521",
+        "amount": -89.45,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Trader Joe's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_232",
+        "date": "2024-12-29",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_231",
+        "date": "2024-12-28",
+        "name": "UBER EATS ORDER",
+        "amount": -28.90,
+        "category": ["Food and Drink", "Delivery"],
+        "merchant_name": "Uber Eats",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_230",
+        "date": "2024-12-27",
+        "name": "SHELL OIL 12345678",
+        "amount": -44.20,
+        "category": ["Travel", "Gas Stations"],
+        "merchant_name": "Shell",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_229",
+        "date": "2024-12-26",
+        "name": "AMZN Mktp US*BOXING",
+        "amount": -34.99,
+        "category": ["Shops", "Online Shopping"],
+        "merchant_name": "Amazon",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_228",
+        "date": "2024-12-25",
+        "name": "CHINESE RESTAURANT XMAS",
+        "amount": -65.40,
+        "category": ["Food and Drink", "Restaurants"],
+        "merchant_name": "Golden Dragon",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_227",
+        "date": "2024-12-24",
+        "name": "SAFEWAY #2911",
+        "amount": -112.30,
+        "category": ["Food and Drink", "Groceries"],
+        "merchant_name": "Safeway",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_226",
+        "date": "2024-12-23",
+        "name": "LAST MINUTE GIFTS",
+        "amount": -89.99,
+        "category": ["Shops", "Gifts"],
+        "merchant_name": "Macy's",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_225",
+        "date": "2024-12-22",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -6.45,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      },
+      {
+        "transaction_id": "tx_224",
+        "date": "2024-12-21",
+        "name": "UBER TRIP MALL",
+        "amount": -22.50,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_223",
+        "date": "2024-12-20",
+        "name": "OFFICE PARTY UBER",
+        "amount": -45.00,
+        "category": ["Travel", "Taxi"],
+        "merchant_name": "Uber",
+        "payment_channel": "online"
+      },
+      {
+        "transaction_id": "tx_222",
+        "date": "2024-12-20",
+        "name": "STARBUCKS STORE 09221",
+        "amount": -5.95,
+        "category": ["Food and Drink", "Coffee Shop"],
+        "merchant_name": "Starbucks",
+        "payment_channel": "in store"
+      }
+  ]

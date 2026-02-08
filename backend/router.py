@@ -1,14 +1,17 @@
-# router.py
-
 from agents.spending_agent import SpendingAgent
 from agents.budgeting_agent import BudgetingAgent
 from agents.investing_agent import InvestingAgent
 from agents.general_agent import GeneralAgent
+from models.gemini_client import GeminiClient
+import json
 
 
 class Router:
 
     def __init__(self):
+
+        self.llm = GeminiClient()
+
         self.agents = {
             "spending": SpendingAgent(),
             "budgeting": BudgetingAgent(),
@@ -16,27 +19,39 @@ class Router:
             "general": GeneralAgent()
         }
 
-    def classify_intent(self, message: str) -> str:
-        """
-        Simple starter intent classification.
-        Replace later with LLM classifier.
-        """
+    def classify_intent(self, message: str):
 
-        msg = message.lower()
+        prompt = f"""
+You are an intent classification system.
 
-        if "spend" in msg or "expense" in msg:
-            return "spending"
-        elif "budget" in msg:
-            return "budgeting"
-        elif "invest" in msg or "stock" in msg:
-            return "investing"
-        else:
+Classify the user's financial query into ONE of:
+
+- spending
+- budgeting
+- investing
+- general
+
+Return ONLY JSON like:
+
+{{ "intent": "investing" }}
+
+User message:
+{message}
+"""
+
+        result = self.llm.generate(prompt)
+
+        try:
+            parsed = json.loads(result)
+            return parsed.get("intent", "general")
+        except:
             return "general"
 
     def dispatch(self, message: str, context: dict):
+
         intent = self.classify_intent(message)
 
-        agent = self.agents[intent]
+        agent = self.agents.get(intent, self.agents["general"])
 
         response = agent.run(message, context)
 

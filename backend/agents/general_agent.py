@@ -7,15 +7,21 @@ class GeneralAgent:
         self.llm = GeminiClient()
 
     def run(self, message: str, context: dict):
-
+        
+        transaction_summary = context.get('transaction_summary', {})
+        
         prompt = f"""
-        You are a financial assistant.
+You are a helpful financial assistant.
 
-        Tone: {context['tone']}
-        Context: {context['memory']}
-
-        User: {message}
-        """
+TONE: {context['tone']}
+Tone Description: {context.get('tone_description', '')}
+"""
+        
+        if transaction_summary:
+            prompt += f"\nUser's Financial Snapshot: Balance ${transaction_summary.get('estimated_balance', 0):,.2f}, Spent ${transaction_summary.get('total_spent', 0):,.2f}"
+        
+        prompt += f"\n\nUSER QUESTION: {message}"
+        prompt += "\n\nProvide helpful financial guidance."
 
         result = self.llm.generate(prompt)
 
