@@ -64,10 +64,7 @@
     <div class="bg-white border-b" style="border-color: var(--grey-light);">
         <div class="container mx-auto px-4">
             <div class="flex space-x-1">
-                <button onclick="showTab('dashboard')" id="tab-dashboard" class="px-6 py-3 font-medium transition tab-active">
-                    Dashboard
-                </button>
-                <button onclick="showTab('ai-accountant')" id="tab-ai-accountant" class="px-6 py-3 font-medium transition tab-inactive">
+                <button onclick="showTab('ai-accountant')" id="tab-ai-accountant" class="px-6 py-3 font-medium transition tab-active">
                     AI Accountant
                 </button>
                 <button onclick="showTab('transactions')" id="tab-transactions" class="px-6 py-3 font-medium transition tab-inactive">
@@ -86,64 +83,7 @@
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
         
-        <!-- TAB 1: Dashboard -->
-        <div id="content-dashboard" class="tab-content">
-            <!-- Financial Health Overview -->
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Financial Health</h3>
-                    <div class="text-4xl font-bold mb-2" style="color: var(--orange-primary);">72/100</div>
-                    <p class="text-sm" style="color: var(--grey-medium);">Needs Attention</p>
-                </div>
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Savings Rate</h3>
-                    <div class="text-4xl font-bold mb-2" style="color: var(--grey-dark);">6.5%</div>
-                    <p class="text-sm risk-medium">Below 20% target</p>
-                </div>
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="text-sm font-medium mb-2" style="color: var(--grey-medium);">Emergency Fund</h3>
-                    <div class="text-4xl font-bold mb-2 risk-high">48hrs</div>
-                    <p class="text-sm" style="color: var(--grey-medium);">Need 3-6 months</p>
-                </div>
-            </div>
-
-            <!-- Cashflow Projection -->
-            <div class="bg-white rounded-lg shadow p-6 mb-8">
-                <h2 class="text-2xl font-bold mb-4" style="color: var(--grey-dark);">30-Day Cashflow Projection</h2>
-                <canvas id="cashflowChart" height="80"></canvas>
-            </div>
-
-            <!-- Insight Cards -->
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-lg shadow p-6 border-l-4" style="border-color: var(--orange-primary);">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-bold" style="color: var(--grey-dark);">Food & Drink Overspending</h3>
-                        <span class="thinking-badge thinking-high">HIGH</span>
-                    </div>
-                    <p class="text-sm mb-3" style="color: var(--grey-medium);">
-                        You're spending $8,885/month on food - that's 21% of income. Industry benchmark is 10-15%.
-                    </p>
-                    <p class="text-sm font-medium" style="color: var(--orange-primary);">
-                        Potential savings: $3,000/month
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6 border-l-4" style="border-color: var(--grey-light);">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-bold" style="color: var(--grey-dark);">Transfer Investigation</h3>
-                        <span class="thinking-badge thinking-high">HIGH</span>
-                    </div>
-                    <p class="text-sm mb-3" style="color: var(--grey-medium);">
-                        $19,810 in transfers detected. Verify these are going to savings/investments, not expenses.
-                    </p>
-                    <p class="text-sm font-medium" style="color: var(--orange-primary);">
-                        Action required: Categorize transfers
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- TAB 2: AI Accountant -->
+        <!-- TAB 1: AI Accountant -->
         <div id="content-ai-accountant" class="tab-content hidden">
             <div class="grid md:grid-cols-3 gap-6 mb-8">
                 <!-- Pipeline Visualization -->
@@ -151,17 +91,15 @@
                     <h2 class="text-xl font-bold mb-4" style="color: var(--grey-dark);">Data Pipeline</h2>
                     <div class="flex items-center justify-between gap-4 mb-6">
                         <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--grey-light);">
-                            <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">1. Bank Data</h3>
-                            <p class="text-xs" style="color: var(--grey-medium);">Plaid Link</p>
-                            <button onclick="connectPlaid()" class="mt-2 px-4 py-1 text-sm rounded text-white" style="background-color: var(--orange-primary);">
-                                Connect
-                            </button>
+                            <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">1. Transaction Data</h3>
+                            <p class="text-xs" style="color: var(--grey-medium);">Loaded Transactions</p>
+                            <p class="text-xs mt-2 font-medium" style="color: var(--orange-primary);">478 txns</p>
                         </div>
                         <div class="text-2xl" style="color: var(--grey-light);">→</div>
                         <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--grey-light);">
                             <h3 class="font-semibold text-sm mb-1" style="color: var(--grey-dark);">2. Processing</h3>
-                            <p class="text-xs" style="color: var(--grey-medium);">FastAPI</p>
-                            <p class="text-xs mt-2 font-medium" style="color: var(--orange-primary);">478 txns</p>
+                            <p class="text-xs" style="color: var(--grey-medium);">FastAPI Backend</p>
+                            <p class="text-xs mt-2 font-medium" style="color: var(--orange-primary);">Active</p>
                         </div>
                         <div class="text-2xl" style="color: var(--grey-light);">→</div>
                         <div class="flex-1 text-center p-4 border-2 rounded" style="border-color: var(--orange-primary);">
@@ -273,15 +211,15 @@
                 
                 <div class="grid md:grid-cols-4 gap-4 mb-6">
                     <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
-                        <div class="text-2xl font-bold" style="color: var(--orange-primary);">478</div>
-                        <div class="text-xs" style="color: var(--grey-medium);">Transactions</div>
+                        <div class="text-2xl font-bold" style="color: var(--orange-primary);" id="txCount">0</div>
+                        <div class="text-xs" style="color: var(--grey-medium);">This Month</div>
                     </div>
                     <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
-                        <div class="text-2xl font-bold" style="color: var(--grey-dark);">$42,500</div>
+                        <div class="text-2xl font-bold" style="color: var(--grey-dark);" id="monthIncome">$0</div>
                         <div class="text-xs" style="color: var(--grey-medium);">Income</div>
                     </div>
                     <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
-                        <div class="text-2xl font-bold" style="color: var(--orange-dark);">$39,742</div>
+                        <div class="text-2xl font-bold" style="color: var(--orange-dark);" id="monthSpent">$0</div>
                         <div class="text-xs" style="color: var(--grey-medium);">Spent</div>
                     </div>
                     <div class="text-center p-4 rounded" style="background-color: var(--grey-bg);">
@@ -292,9 +230,9 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Plaid Transactions -->
+                <!-- Recent Transactions -->
                 <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Plaid Transactions (Top 10)</h3>
+                    <h3 class="font-bold mb-4" style="color: var(--grey-dark);">Recent Transactions (Top 10)</h3>
                     <div class="space-y-2" id="transactionList">
                         <div class="flex justify-between items-center py-2 border-b" style="border-color: var(--grey-bg);">
                             <div>
@@ -358,7 +296,7 @@
                     <div class="p-4 rounded border-2" style="border-color: var(--grey-light);">
                         <div class="text-sm mb-2" style="color: var(--grey-medium);">Bank Balance</div>
                         <div class="text-3xl font-bold" style="color: var(--grey-dark);">$2,758</div>
-                        <div class="text-xs mt-1" style="color: var(--grey-medium);">From Plaid</div>
+                        <div class="text-xs mt-1" style="color: var(--grey-medium);">From Bank</div>
                     </div>
                 </div>
                 <div class="mt-4 p-4 rounded" style="background-color: #FFEBEE;">
@@ -606,51 +544,35 @@
         }
 
         // Load transactions on page load
-        window.addEventListener('load', function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for hash in URL to show specific tab
+            const hash = window.location.hash.substring(1); // Remove # from hash
+            if (hash && document.getElementById(`content-${hash}`)) {
+                showTab(hash);
+            } else {
+                // Show AI Accountant tab by default
+                showTab('ai-accountant');
+            }
+            
+            // Load demo transactions on page load
             fetch(`${API_BASE}/load-transactions?user_id=${USER_ID}`, {
                 method: 'POST'
             })
             .then(r => r.json())
-            .then(data => console.log('Transactions loaded:', data))
+            .then(data => {
+                console.log('Transactions loaded:', data);
+                calculateCurrentMonthStats();
+            })
             .catch(err => console.log('Backend not ready'));
-
-            // Initialize cashflow chart
-            initCashflowChart();
         });
 
-        // Plaid Connection
-        function connectPlaid() {
-            alert('Plaid Link Demo\n\nIn production:\n1. Open Plaid Link UI\n2. User authenticates\n3. Transactions sync\n4. Data flows to Gemini 3\n\nDemo: Using 478 pre-loaded transactions');
-        }
-
-
-        // Clean AI response to sound like natural accountant advice
-        function cleanAccountantResponse(text) {
-            if (!text) return '';
-            
-            // Remove markdown headers (##, ###, etc.)
-            text = text.replace(/^#{1,6}\s+/gm, '');
-            
-            // Remove bold/italic markdown
-            text = text.replace(/\*\*(.+?)\*\*/g, '$1');
-            text = text.replace(/\*(.+?)\*/g, '$1');
-            text = text.replace(/__(.+?)__/g, '$1');
-            text = text.replace(/_(.+?)_/g, '$1');
-            
-            // Remove bullet points and convert to natural sentences
-            text = text.replace(/^[\*\-\+]\s+/gm, '');
-            
-            // Remove numbered lists
-            text = text.replace(/^\d+\.\s+/gm, '');
-            
-            // Clean up excessive newlines
-            text = text.replace(/\n{3,}/g, '\n\n');
-            
-            // Trim whitespace
-            text = text.trim();
-            
-            return text;
-        }
+        // Handle hash changes for navigation
+        window.addEventListener('hashchange', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(`content-${hash}`)) {
+                showTab(hash);
+            }
+        });
 
         // AI Accountant
         async function askAI() {
@@ -682,9 +604,15 @@
                 document.getElementById('aiAgent').textContent = data.agent_used;
                 document.getElementById('aiTone').textContent = data.tone;
                 
-                // Clean and format response to sound like accountant advice
-                let cleanedResponse = cleanAccountantResponse(data.response.response);
-                document.getElementById('aiResponseText').textContent = cleanedResponse;
+                // Clean up response - remove markdown formatting
+                let cleanResponse = data.response.response;
+                cleanResponse = cleanResponse.replace(/#{1,6}\s/g, ''); // Remove markdown headers
+                cleanResponse = cleanResponse.replace(/\*\*/g, ''); // Remove bold markdown
+                cleanResponse = cleanResponse.replace(/\*/g, ''); // Remove italic markdown
+                cleanResponse = cleanResponse.replace(/`/g, ''); // Remove code backticks
+                cleanResponse = cleanResponse.trim();
+                
+                document.getElementById('aiResponseText').textContent = cleanResponse;
                 
                 // Show thinking level based on agent
                 const thinkingBadge = document.getElementById('aiThinking');
@@ -805,7 +733,7 @@
             // Add cash expenses to transaction list for consistency
             const txList = document.getElementById('transactionList');
             
-            // Keep existing Plaid transactions and add cash expenses
+            // Add cash expenses to transaction list
             cashExpenses.forEach(expense => {
                 const exists = Array.from(txList.children).some(child => 
                     child.textContent.includes(expense.merchant)
@@ -827,42 +755,51 @@
             });
         }
 
-        // Cashflow Chart
-        function initCashflowChart() {
-            const ctx = document.getElementById('cashflowChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Today', 'Day 5', 'Day 10', 'Day 15', 'Day 20', 'Day 25', 'Day 30'],
-                    datasets: [{
-                        label: 'Projected Balance',
-                        data: [2758, 2200, 1800, 1500, 2100, 1900, 1700],
-                        borderColor: '#D84315',
-                        backgroundColor: 'rgba(216, 67, 21, 0.1)',
-                        tension: 0.4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: true,
-                    plugins: {
-                        legend: {
-                            display: false
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: false,
-                            ticks: {
-                                callback: function(value) {
-                                    return '$' + value;
-                                }
-                            }
-                        }
+        async function calculateCurrentMonthStats() {
+            try {
+                // Fetch user memory to get transactions
+                const response = await fetch(`${API_BASE}/memory/${USER_ID}`);
+                const memory = await response.json();
+                
+                const transactions = memory.transactions || [];
+                
+                // Get current month and year
+                const now = new Date();
+                const currentMonth = now.getMonth();
+                const currentYear = now.getFullYear();
+                
+                // Filter transactions for current month
+                const currentMonthTxs = transactions.filter(tx => {
+                    const txDate = new Date(tx.date);
+                    return txDate.getMonth() === currentMonth && txDate.getFullYear() === currentYear;
+                });
+                
+                // Calculate income (negative amounts in Plaid) and expenses (positive amounts)
+                let income = 0;
+                let spent = 0;
+                
+                currentMonthTxs.forEach(tx => {
+                    if (tx.amount < 0) {
+                        income += Math.abs(tx.amount);
+                    } else {
+                        spent += tx.amount;
                     }
-                }
-            });
+                });
+                
+                // Update UI
+                document.getElementById('txCount').textContent = currentMonthTxs.length;
+                document.getElementById('monthIncome').textContent = '$' + income.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                document.getElementById('monthSpent').textContent = '$' + spent.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                
+            } catch (error) {
+                console.error('Error calculating month stats:', error);
+                // Set defaults if error
+                document.getElementById('txCount').textContent = '0';
+                document.getElementById('monthIncome').textContent = '$0';
+                document.getElementById('monthSpent').textContent = '$0';
+            }
         }
+
     </script>
 </body>
 </html>
