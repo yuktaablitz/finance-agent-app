@@ -1,46 +1,57 @@
 import os
 import json
 import re
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from dotenv import load_dotenv
 
 load_dotenv()
 
 
 class GeminiClient:
+    """Gemini 3 Flash Preview client with advanced reasoning capabilities."""
 
     def __init__(self):
-
         api_key = os.getenv("GEMINI_API_KEY")
-
         if not api_key:
             raise Exception("Missing GEMINI_API_KEY in .env")
+        
+        self.client = genai.Client(api_key=api_key)
+        self.model = "gemini-3-flash-preview"
 
-        genai.configure(api_key=api_key)
-
-        self.model = genai.GenerativeModel("gemini-2.0-flash-exp")
-
-    def generate(self, prompt: str) -> str:
-
-        response = self.model.generate_content(prompt)
-
+    def generate(self, prompt: str, thinking_level: str = "high") -> str:
+        """Generate content with Gemini 3 Flash.
+        
+        Args:
+            prompt: The input prompt
+            thinking_level: 'minimal', 'low', 'medium', or 'high' (default)
+                          - minimal: No thinking, fastest response
+                          - low: Minimal reasoning, fast
+                          - medium: Balanced thinking
+                          - high: Maximum reasoning depth (default)
+        """
+        response = self.client.models.generate_content(
+            model=self.model,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                thinking_config=types.ThinkingConfig(thinking_level=thinking_level)
+            )
+        )
         return response.text
 
     def extract_transaction_from_receipt(self, image_bytes: bytes, mime_type: str = "image/jpeg") -> dict:
-        """Extract a structured cash transaction from a receipt image.
-
-        Returns a dict with keys like: amount, merchant, date, category, currency, description.
-        Best-effort parsing: if model returns non-JSON, falls back to a minimal dict.
+        """Extract transaction from receipt using Gemini 3 multimodal with high-resolution OCR.
+        
+        Uses media_resolution_high for optimal text extraction from receipts.
         """
-
         prompt = (
-            "You are a receipt understanding system. Extract the transaction from the image. "
-            "Return ONLY valid JSON with this schema:\n"
+            "Extract transaction details from this receipt. "
+            "Return ONLY valid JSON with this exact schema:\n"
             "{\n"
             "  \"amount\": number,\n"
             "  \"currency\": string,\n"
             "  \"merchant\": string,\n"
-            "  \"date\": string,\n"
+            "  \"date\": string (YYYY-MM-DD),\n"
             "  \"category\": string,\n"
             "  \"description\": string\n"
             "}\n"
@@ -48,23 +59,34 @@ class GeminiClient:
         )
 
         try:
-            response = self.model.generate_content(
-                [
-                    prompt,
-                    {
-                        "mime_type": mime_type,
-                        "data": image_bytes,
-                    },
-                ]
+            # Use Gemini 3 with high-resolution media processing for receipt OCR
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=[
+                    types.Content(
+                        parts=[
+                            types.Part(text=prompt),
+                            types.Part(
+                                inline_data=types.Blob(
+                                    mime_type=mime_type,
+                                    data=image_bytes,
+                                ),
+                                media_resolution={"level": "media_resolution_high"}
+                            )
+                        ]
+                    )
+                ],
+                config=types.GenerateContentConfig(
+                    thinking_config=types.ThinkingConfig(thinking_level="medium")
+                )
             )
-            text = getattr(response, "text", None) or ""
-        except Exception:
-            # As a fallback, ask text-only (still returns something for demo purposes).
-            text = self.generate(prompt)
+            text = response.text
+        except Exception as e:
+            print(f"Receipt extraction error: {e}")
+            text = "{}"
 
         parsed = self._extract_json(text)
         if isinstance(parsed, dict):
-            # Normalize minimal fields
             parsed.setdefault("amount", 0)
             parsed.setdefault("currency", None)
             parsed.setdefault("merchant", None)
@@ -79,7 +101,7 @@ class GeminiClient:
             "merchant": None,
             "date": None,
             "category": None,
-            "description": text.strip()[:500] if isinstance(text, str) else None,
+            "description": text.strip()[:500] if text else None,
         }
 
     def _extract_json(self, text: str):

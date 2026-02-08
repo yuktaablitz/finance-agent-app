@@ -51,7 +51,8 @@ BUDGETING METHODOLOGY:
 
 Use their actual numbers. Be specific about which categories to adjust and by how much. Make it feel achievable."""
 
-        result = self.llm.generate(prompt)
+        # Use high thinking level for budget planning and analysis
+        result = self.llm.generate(prompt, thinking_level="high")
 
         return {
             "response": result

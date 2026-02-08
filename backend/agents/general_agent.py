@@ -23,7 +23,8 @@ Tone Description: {context.get('tone_description', '')}
         prompt += f"\n\nUSER QUESTION: {message}"
         prompt += "\n\nProvide helpful financial guidance."
 
-        result = self.llm.generate(prompt)
+        # Use medium thinking level for general queries
+        result = self.llm.generate(prompt, thinking_level="medium")
 
         return {
             "response": result

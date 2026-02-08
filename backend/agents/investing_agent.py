@@ -52,7 +52,8 @@ INVESTMENT ASSESSMENT:
 
 Be honest about whether now is the right time to invest. If they're not ready, explain what to fix first."""
 
-        result = self.llm.generate(prompt)
+        # Use high thinking level for investment readiness assessment
+        result = self.llm.generate(prompt, thinking_level="high")
 
         return {
             "response": result

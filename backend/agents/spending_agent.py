@@ -62,7 +62,8 @@ ANALYSIS FRAMEWORK:
 
 Be conversational but precise. Cite actual transaction amounts and categories. Make your reasoning transparent."""
 
-        result = self.llm.generate(prompt)
+        # Use high thinking level for complex financial analysis
+        result = self.llm.generate(prompt, thinking_level="high")
         
         return {
             "response": result

@@ -39,7 +39,8 @@ User message:
 {message}
 """
 
-        result = self.llm.generate(prompt)
+        # Use low thinking level for fast intent classification
+        result = self.llm.generate(prompt, thinking_level="low")
 
         try:
             parsed = json.loads(result)
